@@ -1,0 +1,16 @@
+to output wavelengths for channels see ufo_aodcrtm_bare_mod.f90
+
+stochastic pattern in src copied from 
+/scratch1/BMC/gsd-fv3-dev/Mariusz.Pagowski/FV3_CHEM/EMC_FV3GFS-GSDCHEM_0.8.7/FV3/stochastic_physics
+
+fv3 fixed files  in
+/scratch1/NCEPDEV/global/glopara/fix/fix_fv3
+
+./src_grib compiled with
+module purge
+module use -a /scratch1/NCEPDEV/stmp4/Daniel.Holdaway/opt/modulefiles
+module load apps/jedi/intel-19.0.5.281
+
+aeronet:
+AOD suggest a +0.02 bias and one sigma uncertainty of 0.02,
+

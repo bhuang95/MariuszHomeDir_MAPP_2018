@@ -1,0 +1,5 @@
+ints_test.o : ints_test.F90  
+kd.o : kd.F90  
+slint.o : slint.F90 kd.o  
+slintest.o : slintest.F90 slint.o  
+uvxyz.o : uvxyz.F90  

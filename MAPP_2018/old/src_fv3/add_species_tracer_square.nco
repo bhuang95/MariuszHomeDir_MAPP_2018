@@ -1,0 +1,121 @@
+msa[$Time,$zaxis_1,$yaxis_1,$xaxis_1]=0.0000000000001f;
+msa@long_name = "msa";
+msa@units = "ppmv";
+msa@checksum = "9999999999999999"; 
+
+so2[$Time,$zaxis_1,$yaxis_1,$xaxis_1]=0.0000000000001f;
+so2@long_name = "so2";
+so2@units = "ppmv";
+so2@checksum = "9999999999999999"; 
+
+dms[$Time,$zaxis_1,$yaxis_1,$xaxis_1]=0.0000000000001f;
+dms@long_name = "dms";
+dms@units = "ppmv";
+dms@checksum = "9999999999999999"; 
+
+sulf[$Time,$zaxis_1,$yaxis_1,$xaxis_1]=0.0000000000001f;
+sulf@long_name = "sulf";
+sulf@units = "ppmv";
+sulf@checksum = "9999999999999999"; 
+
+bc1[$Time,$zaxis_1,$yaxis_1,$xaxis_1]=0.0000000000001f;
+bc1@long_name = "bc1";
+bc1@units = "ug/kg-dryair" ;
+bc1@checksum = "9999999999999999";
+
+bc2[$Time,$zaxis_1,$yaxis_1,$xaxis_1]=0.0000000000001f;
+bc2@long_name = "bc2";
+bc2@units = "ug/kg-dryair" ;
+bc2@checksum = "9999999999999999";
+
+oc1[$Time,$zaxis_1,$yaxis_1,$xaxis_1]=0.0000000000001f;
+oc1@long_name = "oc1";
+oc1@units = "ug/kg-dryair" ;
+oc1@checksum = "9999999999999999";
+
+oc2[$Time,$zaxis_1,$yaxis_1,$xaxis_1]=0.0000000000001f;
+oc2@long_name = "oc2";
+oc2@units = "ug/kg-dryair" ;
+oc2@checksum = "9999999999999999";
+
+p25[$Time,$zaxis_1,$yaxis_1,$xaxis_1]=0.0000000000001f;
+p25@long_name = "p25";
+p25@units = "ug/kg-dryair" ;
+p25@checksum = "9999999999999999";
+
+dust_1[$Time,$zaxis_1,$yaxis_1,$xaxis_1]=0.0000000000001f;
+dust_1@long_name = "seas_1";
+dust_1@units = "ug/kg-dryair" ;
+dust_1@checksum = "9999999999999999";
+
+dust_2[$Time,$zaxis_1,$yaxis_1,$xaxis_1]=0.0000000000001f;
+dust_2@long_name = "dust_2";
+dust_2@units = "ug/kg-dryair" ;
+dust_2@checksum = "9999999999999999";
+
+dust_3[$Time,$zaxis_1,$yaxis_1,$xaxis_1]=0.0000000000001f;
+dust_3@long_name = "dust_3";
+dust_3@units = "ug/kg-dryair" ;
+dust_3@checksum = "9999999999999999";
+
+dust_4[$Time,$zaxis_1,$yaxis_1,$xaxis_1]=0.0000000000001f;
+dust_4@long_name = "dust_4";
+dust_4@units = "ug/kg-dryair" ;
+dust_4@checksum = "9999999999999999";
+
+dust_5[$Time,$zaxis_1,$yaxis_1,$xaxis_1]=0.0000000000001f;
+dust_5@long_name = "dust_5";
+dust_5@units = "ug/kg-dryair" ;
+dust_5@checksum = "9999999999999999";
+                
+seas_1[$Time,$zaxis_1,$yaxis_1,$xaxis_1]=0.0000000000001f;
+seas_1@long_name = "seas_1";
+seas_1@units = "ug/kg-dryair" ;
+seas_1@checksum = "9999999999999999";
+
+seas_2[$Time,$zaxis_1,$yaxis_1,$xaxis_1]=0.0000000000001f;
+seas_2@long_name = "seas_2";
+seas_2@units = "ug/kg-dryair" ;
+seas_2@checksum = "9999999999999999";
+
+seas_3[$Time,$zaxis_1,$yaxis_1,$xaxis_1]=0.0000000000001f;
+seas_3@long_name = "seas_3";
+seas_3@units = "ug/kg-dryair" ;
+seas_3@checksum = "9999999999999999";
+
+seas_4[$Time,$zaxis_1,$yaxis_1,$xaxis_1]=0.0000000000001f;
+seas_4@long_name = "seas_4";
+seas_4@units = "ug/kg-dryair" ;
+seas_4@checksum = "9999999999999999";
+
+*st_idxb=40;
+*st_idxe=120;
+*st_idyb=40;
+*st_idye=120;
+*st_idzb=$zaxis_1.size-5;
+*st_idze=$zaxis_1.size-1;
+
+for(*idx=st_idxb;idx<st_idxe;idx++){
+for(*idy=st_idyb;idy<st_idye;idy++){
+for(*idz=st_idzb;idz<st_idze;idz++){
+   dms(:,idz,idy,idx)=0.00001f;
+   msa(:,idz,idy,idx)=0.00001f;
+   so2(:,idz,idy,idx)=0.01f;
+   sulf(:,idz,idy,idx)=0.01f;
+   bc1(:,idz,idy,idx)=1.0f;
+   bc2(:,idz,idy,idx)=1.0f;
+   oc1(:,idz,idy,idx)=1.0f;
+   oc2(:,idz,idy,idx)=1.0f;
+   p25(:,idz,idy,idx)=1.0f;
+   dust_1(:,idz,idy,idx)=1.0f;
+   dust_2(:,idz,idy,idx)=1.0f;
+   dust_3(:,idz,idy,idx)=1.0f;
+   dust_4(:,idz,idy,idx)=1.0f;
+   dust_5(:,idz,idy,idx)=1.0f;
+   seas_1(:,idz,idy,idx)=1.0f;
+   seas_2(:,idz,idy,idx)=1.0f;
+   seas_3(:,idz,idy,idx)=1.0f;
+   seas_4(:,idz,idy,idx)=1.0f;
+}
+}
+}

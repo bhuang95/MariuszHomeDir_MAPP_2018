@@ -1,0 +1,109 @@
+FC = mpif90 -f90=ifort
+#FCFLAGSFREE =   -FR -traceback -O   -g -C
+FCFLAGSFREE =   -FR -O3 -traceback -O   -g -C
+FCFLAGSFIXED =   -g -C -Mfixed
+FCENDIAN = -convert big_endian
+LIBCDF = -L$(NETCDF)/lib -lnetcdf -lnetcdff 
+NWPROD = /scratch3/NCEPDEV/nwprod
+GSI = /scratch3/BMC/chem-var/pagowski/enkf_runs/gsi/src
+LIBNWPROD = -L$(NWPROD)/lib -lsp_4 -lsigio_4 -lbacio_4 #-lbufr_i4r8 -lw3_i4r8
+LIBMP = -lmpi -openmp -lpthread
+LIBMKL =  -mkl=sequential
+SLATEC = $(HOME)/util/lib
+LIBSLATEC = -L$(SLATEC) -lslatec
+CRTM=/scratch4/NCEPDEV/da/save/Michael.Lueken/nwprod/lib/crtm/2.2.3
+LIBCRTM   = -L$(CRTM) -lcrtm_v2.2.3
+WRFPATH = /scratch3/NCEPDEV/nceplibs/ext/WRF/3.7/WRFV3
+LIBwrf          = -L$(WRFPATH)/main -lwrflib
+LIBwrfio_int    = -L$(WRFPATH)/external/io_int -lwrfio_int
+LIBwrfio_netcdf = -L$(WRFPATH)/external/io_netcdf -lwrfio_nf
+LIBWRF = $(LIBwrf) $(LIBwrfio_int) $(LIBwrfio_netcdf) 
+SRCDIR=/scratch3/BMC/chem-var/pagowski/codes/src
+RM = /bin/rm -f
+
+.SUFFIXES:
+
+.SUFFIXES: .F .f90 .f .o
+
+.F.o: 
+	$(FC) -c $(FCFLAGSFREE) $*.F
+
+.f90.o: 
+	$(FC) -c $(FCFLAGSFREE) -I. -I$(GSI) -I$(NETCDF)/include -I$(CRTM)/incmod/crtm_v2.2.3 $(FCENDIAN) $*.f90
+
+.f.o: 
+	$(FC) -c $(FCFLAGSFIXED) $*.f
+
+OBJ101 = cal_gocart_aod_mpi.f90 genqsat.o stub_set_crtm_aerosol.o wrf_subs.o
+MODULE101 = module_utils.o module_layers.o set_crtm_aerosolmod.o module_domain.o module_wrf_gocart.o crtm_interface.o $(GSI)/kinds.o $(GSI)/constants.o 
+cal_gocart_aod_mpi.x: $(MODULE101) $(OBJ101)
+	$(FC) $(FCENDIAN) $(MODULE101) $(OBJ101) \
+	-I. -I$(GSI) -I$(NETCDF)/include -I$(CRTM)/incmod/crtm_v2.2.3 \
+	$(LIBCDF) $(LIBNWPROD) $(LIBCRTM) $(LIBMP) $(LIBWRF) -o $@
+
+OBJ102 = aod2ncdf.o 
+MODULE102 = netcdf_io.o
+aod2ncdf.x: $(MODULE102) $(OBJ102)	
+	$(FC) $(FCENDIAN) $(MODULE102) $(OBJ102) \
+	$(LIBCDF) -o $@
+
+OBJ103 = smoke2gocart.f90
+MODULE103 = netcdf_io.o
+smoke2gocart.x: $(MODULE103) $(OBJ103)
+	$(FC) $(LINKFLAGS) $(MODULE103) $(OBJ103) \
+	-I. -I$(NETCDF)/include \
+	$(LIBCDF) -o $@
+
+OBJ104 = grib2nc4crtm.f90
+MODULE104 = netcdf_io.o $(GSI)/constants.o $(SRCDIR)/module_date_sub.o
+grib2nc4crtm.x: $(MODULE104) $(OBJ104)
+	$(FC) $(LINKFLAGS) $(MODULE104) $(OBJ104) \
+	-I. -I$(GSI) -I$(SRCDIR) -I$(NETCDF)/include \
+	$(LIBCDF) -o $@
+
+OBJ105 = cal_gocart_aod.f90 genqsat.o stub_set_crtm_aerosol.o wrf_subs.o
+MODULE105 = module_utils.o module_layers.o set_crtm_aerosolmod.o module_domain.o module_wrf_gocart.o crtm_interface.o $(GSI)/kinds.o $(GSI)/constants.o 
+cal_gocart_aod.x: $(MODULE105) $(OBJ105)
+	$(FC) $(FCENDIAN) $(MODULE105) $(OBJ105) \
+	-I$(CRTM)/incmod/crtm_v2.2.3 -I. -I$(GSI) -I$(NETCDF)/include \
+	$(LIBCDF) $(LIBNWPROD) $(LIBCRTM) $(LIBMP) $(LIBWRF) -o $@
+
+OBJ106 = smoke_weights.f90 ${SRCDIR}/all_spaces.o
+MODULE106 = netcdf_io.o 
+smoke_weights.x: $(MODULE106) $(OBJ106)
+	$(FC) $(LINKFLAGS) $(MODULE106) $(OBJ106) \
+	-I.  -I$(NETCDF)/include \
+	$(LIBSLATEC) $(LIBMKL) $(LIBCDF) -o $@
+
+OBJ107 = cal_smoke_aod_mpi.f90 genqsat.o stub_set_crtm_aerosol.o wrf_subs.o
+MODULE107 = module_utils.o module_layers.o set_crtm_aerosolmod.o module_domain.o module_wrf_gocart.o crtm_interface.o $(GSI)/kinds.o $(GSI)/constants.o 
+cal_smoke_aod_mpi.x: $(MODULE107) $(OBJ107)
+	$(FC) $(FCENDIAN) $(MODULE107) $(OBJ107) \
+	-I. -I$(GSI) -I$(NETCDF)/include -I$(CRTM)/incmod/crtm_v2.2.3 \
+	$(LIBCDF) $(LIBNWPROD) $(LIBCRTM) $(LIBMP) $(LIBWRF) -o $@
+
+
+OBJ108 = get_crtm_vawelengths.f90 stub_set_crtm_aerosol.f90 
+MODULE108 = module_utils.f90 module_layers.f90 set_crtm_aerosolmod.f90 module_domain.f90 module_wrf_gocart.f90 crtm_interface.f90 $(GSI)/kinds.o $(GSI)/constants.o
+MODULE108 = module_utils.f90 $(GSI)/kinds.o $(GSI)/constants.o
+get_crtm_vawelengths.x: $(MODULE108) $(OBJ108)
+	$(FC) $(FCENDIAN) $(MODULE108) $(OBJ108) \
+	-I. -I$(GSI) -I$(NETCDF)/include -I$(CRTM)/incmod/crtm_v2.2.3 \
+	$(LIBCDF) $(LIBNWPROD) $(LIBCRTM) $(LIBMP) $(LIBWRF) -o $@
+
+
+cal_gocart_aod_mpi.o: cal_gocart_aod_mpi.f90 wrf_subs.o module_wrf_gocart.o module_utils.o module_domain.o crtm_interface.o genqsat.o stub_set_crtm_aerosol.o set_crtm_aerosolmod.o $(GSI)/kinds.o $(GSI)/constants.o 
+cal_gocart_aod.o: cal_gocart_aod.f90 wrf_subs.o module_wrf_gocart.o module_utils.o module_domain.o crtm_interface.o genqsat.o stub_set_crtm_aerosol.o set_crtm_aerosolmod.o $(GSI)/kinds.o $(GSI)/constants.o 
+module_domain.o: module_domain.f90
+module_layers.o: module_layers.f90 module_domain.o $(GSI)/kinds.o $(GSI)/constants.o
+crtm_interface.o: crtm_interface.f90 module_domain.o module_utils.o module_wrf_gocart.o module_layers.o stub_set_crtm_aerosol.o set_crtm_aerosolmod.o $(GSI)/kinds.o $(GSI)/constants.o
+genqsat.o: $(GSI)/kinds.o $(GSI)/constants.o
+module_utils.o: $(GSI)/kinds.o
+set_crtm_aerosolmod.o: set_crtm_aerosolmod.f90
+stub_set_crtm_aerosol.o: module_utils.o $(GSI)/kinds.o $(GSI)/constants.o
+netcdf_io.o: netcdf_io.f90
+grib2nc4crtm.o: grib2nc4crtm.f90 netcdf_io.o
+
+clean:
+	$(RM) *.o *.x *.stb *.mod
+

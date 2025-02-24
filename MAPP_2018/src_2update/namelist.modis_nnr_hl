@@ -1,0 +1,13 @@
+&record_inout
+ input_dir = "/scratch3/BMC/fim/MAPP_2018/OBS/NNR_003_6Targets/4hl_DA_ENKF"
+ input_file = "nnr_fv3.MYD04.land.2015080618.nc"
+! input_file = "nnr_fv3.MOD04.deep.2015080512.nc"
+ output_dir = "/scratch3/BMC/fim/MAPP_2018/OBS/NNR_003_6Targets/hl"
+! output_dir = "/scratch3/BMC/fim/MAPP_2018/OBS/NNR_003_6Targets/hl_DA_ENKF"
+ output_file_covar = "nnr_fv3.MYD04.land.covar_hl.2015080618.nc"
+! output_file_covar = "nnr_fv3.MOD04.deep.covar_hl.2015080512.nc"
+ logaod=.T.
+ epsilon=0.
+ b_boar=0.5
+ calc_scales=.F.
+/

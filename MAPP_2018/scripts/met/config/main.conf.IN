@@ -1,0 +1,10 @@
+# This is a comment, comments are defined with a // at the beginning of the line
+
+# Set the MET_INSTALL_DIR to the location of the MET install
+[dir]
+MET_INSTALL_DIR = _MET_PATH_
+
+# Set these to any valid directory to override the </path/to> placeholder set in the metplus_data.conf and metplus_system.conf file
+[dir]
+INPUT_BASE = _INPUTBASE_
+OUTPUT_BASE = _OUTPUTBASE_

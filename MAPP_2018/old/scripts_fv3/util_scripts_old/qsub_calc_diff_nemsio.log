@@ -1,0 +1,1993 @@
++ EXEC=/home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x
++ . /etc/profile
++ [ -x /usr/bin/id ]
++ [ -z 8014 ]
++ id -un
++ USER=Mariusz.Pagowski
++ LOGNAME=Mariusz.Pagowski
++ MAIL=/var/spool/mail/Mariusz.Pagowski
++ [ 8014 '=' 0 ]
++ pathmunge /usr/local/sbin after
++ pathmunge /usr/sbin after
++ pathmunge /sbin after
++ /bin/hostname
++ 2> /dev/null
++ HOSTNAME=tfe01
++ HISTSIZE=1000
++ [ ignoredups '=' ignorespace ]
++ HISTCONTROL=ignoredups
++ export HISTCONTROL
++ export PATH USER LOGNAME MAIL HOSTNAME HISTSIZE HISTCONTROL
++ [ 8014 -gt 199 ]
++ id -gn
++ id -un
++ [ gapp2005 '=' Mariusz.Pagowski ]
++ umask 022
++ [ -r /etc/profile.d/colorls.sh ]
++ [ hxBl '!=' hxBl ]
++ . /etc/profile.d/colorls.sh
++ 1> /dev/null 2>& 1
++ [ -r /etc/profile.d/cvs.sh ]
++ [ hxBl '!=' hxBl ]
++ . /etc/profile.d/cvs.sh
++ 1> /dev/null 2>& 1
++ [ -r /etc/profile.d/glib2.sh ]
++ [ hxBl '!=' hxBl ]
++ . /etc/profile.d/glib2.sh
++ 1> /dev/null 2>& 1
++ [ -r /etc/profile.d/globus-user-env-local.sh ]
++ [ hxBl '!=' hxBl ]
++ . /etc/profile.d/globus-user-env-local.sh
++ 1> /dev/null 2>& 1
++ [ -r /etc/profile.d/gold_moab_torque.sh ]
++ [ hxBl '!=' hxBl ]
++ . /etc/profile.d/gold_moab_torque.sh
++ 1> /dev/null 2>& 1
++ [ -r /etc/profile.d/ibutils.sh ]
++ [ hxBl '!=' hxBl ]
++ . /etc/profile.d/ibutils.sh
++ 1> /dev/null 2>& 1
++ [ -r /etc/profile.d/kde.sh ]
++ [ hxBl '!=' hxBl ]
++ . /etc/profile.d/kde.sh
++ 1> /dev/null 2>& 1
++ [ -r /etc/profile.d/lang.sh ]
++ [ hxBl '!=' hxBl ]
++ . /etc/profile.d/lang.sh
++ 1> /dev/null 2>& 1
++ [ -r /etc/profile.d/less.sh ]
++ [ hxBl '!=' hxBl ]
++ . /etc/profile.d/less.sh
++ 1> /dev/null 2>& 1
++ [ -r /etc/profile.d/local-apps.sh ]
++ [ hxBl '!=' hxBl ]
++ . /etc/profile.d/local-apps.sh
++ 1> /dev/null 2>& 1
++ [ -r /etc/profile.d/modules.sh ]
++ [ hxBl '!=' hxBl ]
++ . /etc/profile.d/modules.sh
++ 1> /dev/null 2>& 1
++ [ -r /etc/profile.d/mpi-selector.sh ]
++ [ hxBl '!=' hxBl ]
++ . /etc/profile.d/mpi-selector.sh
++ 1> /dev/null 2>& 1
++ [ -r /etc/profile.d/qt.sh ]
++ [ hxBl '!=' hxBl ]
++ . /etc/profile.d/qt.sh
++ 1> /dev/null 2>& 1
++ [ -r /etc/profile.d/set-bmc-url.sh ]
++ [ hxBl '!=' hxBl ]
++ . /etc/profile.d/set-bmc-url.sh
++ 1> /dev/null 2>& 1
++ [ -r /etc/profile.d/ssh-install.sh ]
++ [ hxBl '!=' hxBl ]
++ . /etc/profile.d/ssh-install.sh
++ 1> /dev/null 2>& 1
++ [ -r /etc/profile.d/udisks-bash-completion.sh ]
++ [ hxBl '!=' hxBl ]
++ . /etc/profile.d/udisks-bash-completion.sh
++ 1> /dev/null 2>& 1
++ [ -r /etc/profile.d/vim.sh ]
++ [ hxBl '!=' hxBl ]
++ . /etc/profile.d/vim.sh
++ 1> /dev/null 2>& 1
++ [ -r /etc/profile.d/which2.sh ]
++ [ hxBl '!=' hxBl ]
++ . /etc/profile.d/which2.sh
++ 1> /dev/null 2>& 1
++ unset i
++ unset -f pathmunge
++ . /apps/lmod/lmod/init/sh
++ LMOD_PKG=/apps/lmod/lmod
++ LMOD_DIR=/apps/lmod/lmod/libexec/
++ LMOD_CMD=/apps/lmod/lmod/libexec/lmod
++ MODULESHOME=/apps/lmod/lmod
++ export LMOD_CMD
++ export LMOD_PKG
++ export LMOD_DIR
++ export MODULESHOME
++ export LMOD_DIR
++ . ./environ.sh
++ ulimit -s unlimited
+qsub_calc_diff_nemsio.sh[21]: .[3]: ulimit: unlimited: limit exceeded [Operation not permitted]
++ KMP_AFFINITY=disabled
++ export KMP_AFFINITY
++ FHMIN=3
++ export FHMIN
++ FHMAX=9
++ export FHMAX
++ FHOUT=3
++ export FHOUT
++ ANALINC=6
++ export ANALINC
++ LEVS=63
++ export LEVS
++ SMOOTHINF=35
++ export SMOOTHINF
++ JCAP_ens=382
++ export JCAP_ens
++ LONB_ens=768
++ export LONB_ens
++ LATB_ens=384
++ export LATB_ens
++ CRES=192
++ export CRES
++ FIXGLOBAL=/scratch4/NCEPDEV/global/save/glopara/svn/gfs/tags/global_shared.v13.0.2/fix/fix_am
++ export FIXGLOBAL
++ BASEDIR=/scratch3/BMC/chem-var/pagowski/tmp
++ export BASEDIR
++ OBS_DIR=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sampled
++ export OBS_DIR
++ GFS_DIR=/scratch3/BMC/chem-var/pagowski/tmp/indata_gfs_spectral
++ export GFS_DIR
++ FV3_BASEDIR=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS
++ export FV3_BASEDIR
++ FV3_BUILD=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/sorc/fv3gfs.fd/BUILD
++ export FV3_BUILD
++ FV3_EXECDIR=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/sorc/fv3gfs.fd/BUILD/bin
++ export FV3_EXECDIR
++ FV3_EXEC=fv3_gfs_nh.prod.32bit.x
++ export FV3_EXEC
++ FV3_DATA=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_DATA
++ export FV3_DATA
++ FV3_FIXDIR=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_DATA/fix
++ export FV3_FIXDIR
++ FV3_CLIM=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_DATA/fix/fix_am
++ export FV3_CLIM
++ FV3_RUNS=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS
++ export FV3_RUNS
++ GSI_BASEDIR=/scratch3/BMC/chem-var/pagowski/tmp/gsi
++ export GSI_BASEDIR
++ GSI_EXECDIR=/scratch3/BMC/chem-var/pagowski/tmp/gsi/src_fv3
++ export GSI_EXECDIR
++ GSI_EXEC=global_gsi
++ export GSI_EXEC
++ ENKF_BASEDIR=/scratch3/BMC/chem-var/pagowski/tmp/gsi/enkf
++ export ENKF_BASEDIR
++ ENKF_EXECDIR=/scratch3/BMC/chem-var/pagowski/tmp/gsi/enkf
++ export ENKF_EXECDIR
++ ENKF_EXEC=global_enkf
++ export ENKF_EXEC
++ SCRIPTDIR=/home/Mariusz.Pagowski/codes/fv3/driver_scripts
++ export SCRIPTDIR
++ SCRIPTDIR_UTIL=/home/Mariusz.Pagowski/codes/fv3/util_scripts
++ export SCRIPTDIR_UTIL
++ SCRIPTDIR_DA=/home/Mariusz.Pagowski/codes/fv3/da_scripts
++ export SCRIPTDIR_DA
++ LOGDIR=/scratch3/BMC/chem-var/pagowski/tmp/logs
++ export LOGDIR
++ ndate=/home/Mariusz.Pagowski/bin/ndate
++ start_date=2015080500
++ end_date=2015090112
++ FCSTINC=12
++ echo 2015080500
++ cut -c1-4
++ year=2015
++ echo 2015080500
++ cut -c5-6
++ month=08
++ echo 2015080500
++ cut -c7-8
++ day=05
++ echo 2015080500
++ cut -c9-10
++ hr=00
++ INDIR=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio
++ OUTDIR=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/bin_regrid_bckg
++ [[ ! -r /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/bin_regrid_bckg ]]
++ cd /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/bin_regrid_bckg
++ analdate=2015080500
++ nanal=1
++ [[ 2015080500 -le 2015090112 ]]
++ printf %03i 1
++ charnanal=mem001
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080500_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080500_fhr12_ensmean
++ fnameout=bin_2015080500_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080500_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080500_fhr12_ensmean bin_2015080500_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015080500_ensmean bin_2015080500_mem001
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015080500
++ analdate=2015080512
++ [[ 2015080512 -le 2015090112 ]]
++ printf %03i 2
++ charnanal=mem002
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080512_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080512_fhr12_ensmean
++ fnameout=bin_2015080512_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080512_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080512_fhr12_ensmean bin_2015080512_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015080512_ensmean bin_2015080500_mem002
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015080512
++ analdate=2015080600
++ [[ 2015080600 -le 2015090112 ]]
++ printf %03i 3
++ charnanal=mem003
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080600_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080600_fhr12_ensmean
++ fnameout=bin_2015080600_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080600_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080600_fhr12_ensmean bin_2015080600_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015080600_ensmean bin_2015080500_mem003
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015080600
++ analdate=2015080612
++ [[ 2015080612 -le 2015090112 ]]
++ printf %03i 4
++ charnanal=mem004
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080612_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080612_fhr12_ensmean
++ fnameout=bin_2015080612_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080612_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080612_fhr12_ensmean bin_2015080612_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015080612_ensmean bin_2015080500_mem004
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015080612
++ analdate=2015080700
++ [[ 2015080700 -le 2015090112 ]]
++ printf %03i 5
++ charnanal=mem005
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080700_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080700_fhr12_ensmean
++ fnameout=bin_2015080700_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080700_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080700_fhr12_ensmean bin_2015080700_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015080700_ensmean bin_2015080500_mem005
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015080700
++ analdate=2015080712
++ [[ 2015080712 -le 2015090112 ]]
++ printf %03i 6
++ charnanal=mem006
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080712_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080712_fhr12_ensmean
++ fnameout=bin_2015080712_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080712_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080712_fhr12_ensmean bin_2015080712_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015080712_ensmean bin_2015080500_mem006
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015080712
++ analdate=2015080800
++ [[ 2015080800 -le 2015090112 ]]
++ printf %03i 7
++ charnanal=mem007
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080800_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080800_fhr12_ensmean
++ fnameout=bin_2015080800_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080800_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080800_fhr12_ensmean bin_2015080800_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015080800_ensmean bin_2015080500_mem007
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015080800
++ analdate=2015080812
++ [[ 2015080812 -le 2015090112 ]]
++ printf %03i 8
++ charnanal=mem008
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080812_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080812_fhr12_ensmean
++ fnameout=bin_2015080812_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080812_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080812_fhr12_ensmean bin_2015080812_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015080812_ensmean bin_2015080500_mem008
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015080812
++ analdate=2015080900
++ [[ 2015080900 -le 2015090112 ]]
++ printf %03i 9
++ charnanal=mem009
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080900_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080900_fhr12_ensmean
++ fnameout=bin_2015080900_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080900_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080900_fhr12_ensmean bin_2015080900_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015080900_ensmean bin_2015080500_mem009
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015080900
++ analdate=2015080912
++ [[ 2015080912 -le 2015090112 ]]
++ printf %03i 10
++ charnanal=mem010
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080912_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080912_fhr12_ensmean
++ fnameout=bin_2015080912_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080912_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015080912_fhr12_ensmean bin_2015080912_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015080912_ensmean bin_2015080500_mem010
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015080912
++ analdate=2015081000
++ [[ 2015081000 -le 2015090112 ]]
++ printf %03i 11
++ charnanal=mem011
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081000_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081000_fhr12_ensmean
++ fnameout=bin_2015081000_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081000_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081000_fhr12_ensmean bin_2015081000_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081000_ensmean bin_2015080500_mem011
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081000
++ analdate=2015081012
++ [[ 2015081012 -le 2015090112 ]]
++ printf %03i 12
++ charnanal=mem012
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081012_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081012_fhr12_ensmean
++ fnameout=bin_2015081012_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081012_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081012_fhr12_ensmean bin_2015081012_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081012_ensmean bin_2015080500_mem012
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081012
++ analdate=2015081100
++ [[ 2015081100 -le 2015090112 ]]
++ printf %03i 13
++ charnanal=mem013
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081100_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081100_fhr12_ensmean
++ fnameout=bin_2015081100_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081100_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081100_fhr12_ensmean bin_2015081100_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081100_ensmean bin_2015080500_mem013
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081100
++ analdate=2015081112
++ [[ 2015081112 -le 2015090112 ]]
++ printf %03i 14
++ charnanal=mem014
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081112_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081112_fhr12_ensmean
++ fnameout=bin_2015081112_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081112_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081112_fhr12_ensmean bin_2015081112_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081112_ensmean bin_2015080500_mem014
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081112
++ analdate=2015081200
++ [[ 2015081200 -le 2015090112 ]]
++ printf %03i 15
++ charnanal=mem015
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081200_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081200_fhr12_ensmean
++ fnameout=bin_2015081200_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081200_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081200_fhr12_ensmean bin_2015081200_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081200_ensmean bin_2015080500_mem015
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081200
++ analdate=2015081212
++ [[ 2015081212 -le 2015090112 ]]
++ printf %03i 16
++ charnanal=mem016
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081212_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081212_fhr12_ensmean
++ fnameout=bin_2015081212_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081212_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081212_fhr12_ensmean bin_2015081212_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081212_ensmean bin_2015080500_mem016
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081212
++ analdate=2015081300
++ [[ 2015081300 -le 2015090112 ]]
++ printf %03i 17
++ charnanal=mem017
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081300_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081300_fhr12_ensmean
++ fnameout=bin_2015081300_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081300_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081300_fhr12_ensmean bin_2015081300_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081300_ensmean bin_2015080500_mem017
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081300
++ analdate=2015081312
++ [[ 2015081312 -le 2015090112 ]]
++ printf %03i 18
++ charnanal=mem018
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081312_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081312_fhr12_ensmean
++ fnameout=bin_2015081312_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081312_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081312_fhr12_ensmean bin_2015081312_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081312_ensmean bin_2015080500_mem018
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081312
++ analdate=2015081400
++ [[ 2015081400 -le 2015090112 ]]
++ printf %03i 19
++ charnanal=mem019
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081400_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081400_fhr12_ensmean
++ fnameout=bin_2015081400_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081400_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081400_fhr12_ensmean bin_2015081400_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081400_ensmean bin_2015080500_mem019
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081400
++ analdate=2015081412
++ [[ 2015081412 -le 2015090112 ]]
++ printf %03i 20
++ charnanal=mem020
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081412_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081412_fhr12_ensmean
++ fnameout=bin_2015081412_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081412_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081412_fhr12_ensmean bin_2015081412_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081412_ensmean bin_2015080500_mem020
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081412
++ analdate=2015081500
++ [[ 2015081500 -le 2015090112 ]]
++ printf %03i 21
++ charnanal=mem021
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081500_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081500_fhr12_ensmean
++ fnameout=bin_2015081500_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081500_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081500_fhr12_ensmean bin_2015081500_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081500_ensmean bin_2015080500_mem021
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081500
++ analdate=2015081512
++ [[ 2015081512 -le 2015090112 ]]
++ printf %03i 22
++ charnanal=mem022
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081512_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081512_fhr12_ensmean
++ fnameout=bin_2015081512_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081512_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081512_fhr12_ensmean bin_2015081512_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081512_ensmean bin_2015080500_mem022
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081512
++ analdate=2015081600
++ [[ 2015081600 -le 2015090112 ]]
++ printf %03i 23
++ charnanal=mem023
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081600_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081600_fhr12_ensmean
++ fnameout=bin_2015081600_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081600_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081600_fhr12_ensmean bin_2015081600_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081600_ensmean bin_2015080500_mem023
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081600
++ analdate=2015081612
++ [[ 2015081612 -le 2015090112 ]]
++ printf %03i 24
++ charnanal=mem024
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081612_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081612_fhr12_ensmean
++ fnameout=bin_2015081612_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081612_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081612_fhr12_ensmean bin_2015081612_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081612_ensmean bin_2015080500_mem024
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081612
++ analdate=2015081700
++ [[ 2015081700 -le 2015090112 ]]
++ printf %03i 25
++ charnanal=mem025
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081700_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081700_fhr12_ensmean
++ fnameout=bin_2015081700_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081700_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081700_fhr12_ensmean bin_2015081700_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081700_ensmean bin_2015080500_mem025
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081700
++ analdate=2015081712
++ [[ 2015081712 -le 2015090112 ]]
++ printf %03i 26
++ charnanal=mem026
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081712_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081712_fhr12_ensmean
++ fnameout=bin_2015081712_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081712_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081712_fhr12_ensmean bin_2015081712_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081712_ensmean bin_2015080500_mem026
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081712
++ analdate=2015081800
++ [[ 2015081800 -le 2015090112 ]]
++ printf %03i 27
++ charnanal=mem027
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081800_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081800_fhr12_ensmean
++ fnameout=bin_2015081800_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081800_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081800_fhr12_ensmean bin_2015081800_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081800_ensmean bin_2015080500_mem027
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081800
++ analdate=2015081812
++ [[ 2015081812 -le 2015090112 ]]
++ printf %03i 28
++ charnanal=mem028
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081812_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081812_fhr12_ensmean
++ fnameout=bin_2015081812_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081812_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081812_fhr12_ensmean bin_2015081812_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081812_ensmean bin_2015080500_mem028
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081812
++ analdate=2015081900
++ [[ 2015081900 -le 2015090112 ]]
++ printf %03i 29
++ charnanal=mem029
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081900_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081900_fhr12_ensmean
++ fnameout=bin_2015081900_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081900_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081900_fhr12_ensmean bin_2015081900_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081900_ensmean bin_2015080500_mem029
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081900
++ analdate=2015081912
++ [[ 2015081912 -le 2015090112 ]]
++ printf %03i 30
++ charnanal=mem030
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081912_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081912_fhr12_ensmean
++ fnameout=bin_2015081912_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081912_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015081912_fhr12_ensmean bin_2015081912_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015081912_ensmean bin_2015080500_mem030
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015081912
++ analdate=2015082000
++ [[ 2015082000 -le 2015090112 ]]
++ printf %03i 31
++ charnanal=mem031
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082000_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082000_fhr12_ensmean
++ fnameout=bin_2015082000_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082000_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082000_fhr12_ensmean bin_2015082000_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082000_ensmean bin_2015080500_mem031
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082000
++ analdate=2015082012
++ [[ 2015082012 -le 2015090112 ]]
++ printf %03i 32
++ charnanal=mem032
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082012_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082012_fhr12_ensmean
++ fnameout=bin_2015082012_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082012_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082012_fhr12_ensmean bin_2015082012_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082012_ensmean bin_2015080500_mem032
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082012
++ analdate=2015082100
++ [[ 2015082100 -le 2015090112 ]]
++ printf %03i 33
++ charnanal=mem033
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082100_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082100_fhr12_ensmean
++ fnameout=bin_2015082100_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082100_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082100_fhr12_ensmean bin_2015082100_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082100_ensmean bin_2015080500_mem033
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082100
++ analdate=2015082112
++ [[ 2015082112 -le 2015090112 ]]
++ printf %03i 34
++ charnanal=mem034
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082112_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082112_fhr12_ensmean
++ fnameout=bin_2015082112_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082112_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082112_fhr12_ensmean bin_2015082112_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082112_ensmean bin_2015080500_mem034
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082112
++ analdate=2015082200
++ [[ 2015082200 -le 2015090112 ]]
++ printf %03i 35
++ charnanal=mem035
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082200_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082200_fhr12_ensmean
++ fnameout=bin_2015082200_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082200_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082200_fhr12_ensmean bin_2015082200_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082200_ensmean bin_2015080500_mem035
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082200
++ analdate=2015082212
++ [[ 2015082212 -le 2015090112 ]]
++ printf %03i 36
++ charnanal=mem036
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082212_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082212_fhr12_ensmean
++ fnameout=bin_2015082212_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082212_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082212_fhr12_ensmean bin_2015082212_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082212_ensmean bin_2015080500_mem036
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082212
++ analdate=2015082300
++ [[ 2015082300 -le 2015090112 ]]
++ printf %03i 37
++ charnanal=mem037
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082300_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082300_fhr12_ensmean
++ fnameout=bin_2015082300_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082300_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082300_fhr12_ensmean bin_2015082300_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082300_ensmean bin_2015080500_mem037
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082300
++ analdate=2015082312
++ [[ 2015082312 -le 2015090112 ]]
++ printf %03i 38
++ charnanal=mem038
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082312_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082312_fhr12_ensmean
++ fnameout=bin_2015082312_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082312_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082312_fhr12_ensmean bin_2015082312_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082312_ensmean bin_2015080500_mem038
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082312
++ analdate=2015082400
++ [[ 2015082400 -le 2015090112 ]]
++ printf %03i 39
++ charnanal=mem039
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082400_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082400_fhr12_ensmean
++ fnameout=bin_2015082400_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082400_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082400_fhr12_ensmean bin_2015082400_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082400_ensmean bin_2015080500_mem039
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082400
++ analdate=2015082412
++ [[ 2015082412 -le 2015090112 ]]
++ printf %03i 40
++ charnanal=mem040
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082412_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082412_fhr12_ensmean
++ fnameout=bin_2015082412_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082412_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082412_fhr12_ensmean bin_2015082412_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082412_ensmean bin_2015080500_mem040
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082412
++ analdate=2015082500
++ [[ 2015082500 -le 2015090112 ]]
++ printf %03i 41
++ charnanal=mem041
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082500_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082500_fhr12_ensmean
++ fnameout=bin_2015082500_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082500_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082500_fhr12_ensmean bin_2015082500_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082500_ensmean bin_2015080500_mem041
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082500
++ analdate=2015082512
++ [[ 2015082512 -le 2015090112 ]]
++ printf %03i 42
++ charnanal=mem042
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082512_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082512_fhr12_ensmean
++ fnameout=bin_2015082512_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082512_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082512_fhr12_ensmean bin_2015082512_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082512_ensmean bin_2015080500_mem042
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082512
++ analdate=2015082600
++ [[ 2015082600 -le 2015090112 ]]
++ printf %03i 43
++ charnanal=mem043
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082600_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082600_fhr12_ensmean
++ fnameout=bin_2015082600_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082600_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082600_fhr12_ensmean bin_2015082600_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082600_ensmean bin_2015080500_mem043
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082600
++ analdate=2015082612
++ [[ 2015082612 -le 2015090112 ]]
++ printf %03i 44
++ charnanal=mem044
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082612_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082612_fhr12_ensmean
++ fnameout=bin_2015082612_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082612_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082612_fhr12_ensmean bin_2015082612_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082612_ensmean bin_2015080500_mem044
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082612
++ analdate=2015082700
++ [[ 2015082700 -le 2015090112 ]]
++ printf %03i 45
++ charnanal=mem045
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082700_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082700_fhr12_ensmean
++ fnameout=bin_2015082700_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082700_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082700_fhr12_ensmean bin_2015082700_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082700_ensmean bin_2015080500_mem045
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082700
++ analdate=2015082712
++ [[ 2015082712 -le 2015090112 ]]
++ printf %03i 46
++ charnanal=mem046
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082712_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082712_fhr12_ensmean
++ fnameout=bin_2015082712_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082712_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082712_fhr12_ensmean bin_2015082712_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082712_ensmean bin_2015080500_mem046
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082712
++ analdate=2015082800
++ [[ 2015082800 -le 2015090112 ]]
++ printf %03i 47
++ charnanal=mem047
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082800_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082800_fhr12_ensmean
++ fnameout=bin_2015082800_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082800_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082800_fhr12_ensmean bin_2015082800_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082800_ensmean bin_2015080500_mem047
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082800
++ analdate=2015082812
++ [[ 2015082812 -le 2015090112 ]]
++ printf %03i 48
++ charnanal=mem048
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082812_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082812_fhr12_ensmean
++ fnameout=bin_2015082812_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082812_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082812_fhr12_ensmean bin_2015082812_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082812_ensmean bin_2015080500_mem048
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082812
++ analdate=2015082900
++ [[ 2015082900 -le 2015090112 ]]
++ printf %03i 49
++ charnanal=mem049
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082900_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082900_fhr12_ensmean
++ fnameout=bin_2015082900_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082900_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082900_fhr12_ensmean bin_2015082900_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082900_ensmean bin_2015080500_mem049
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082900
++ analdate=2015082912
++ [[ 2015082912 -le 2015090112 ]]
++ printf %03i 50
++ charnanal=mem050
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082912_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082912_fhr12_ensmean
++ fnameout=bin_2015082912_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082912_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015082912_fhr12_ensmean bin_2015082912_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015082912_ensmean bin_2015080500_mem050
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015082912
++ analdate=2015083000
++ [[ 2015083000 -le 2015090112 ]]
++ printf %03i 51
++ charnanal=mem051
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015083000_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015083000_fhr12_ensmean
++ fnameout=bin_2015083000_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015083000_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015083000_fhr12_ensmean bin_2015083000_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015083000_ensmean bin_2015080500_mem051
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015083000
++ analdate=2015083012
++ [[ 2015083012 -le 2015090112 ]]
++ printf %03i 52
++ charnanal=mem052
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015083012_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015083012_fhr12_ensmean
++ fnameout=bin_2015083012_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015083012_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015083012_fhr12_ensmean bin_2015083012_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015083012_ensmean bin_2015080500_mem052
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015083012
++ analdate=2015083100
++ [[ 2015083100 -le 2015090112 ]]
++ printf %03i 53
++ charnanal=mem053
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015083100_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015083100_fhr12_ensmean
++ fnameout=bin_2015083100_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015083100_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015083100_fhr12_ensmean bin_2015083100_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015083100_ensmean bin_2015080500_mem053
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015083100
++ analdate=2015083112
++ [[ 2015083112 -le 2015090112 ]]
++ printf %03i 54
++ charnanal=mem054
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015083112_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015083112_fhr12_ensmean
++ fnameout=bin_2015083112_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015083112_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015083112_fhr12_ensmean bin_2015083112_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015083112_ensmean bin_2015080500_mem054
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015083112
++ analdate=2015090100
++ [[ 2015090100 -le 2015090112 ]]
++ printf %03i 55
++ charnanal=mem055
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015090100_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015090100_fhr12_ensmean
++ fnameout=bin_2015090100_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015090100_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015090100_fhr12_ensmean bin_2015090100_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015090100_ensmean bin_2015080500_mem055
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015090100
++ analdate=2015090112
++ [[ 2015090112 -le 2015090112 ]]
++ printf %03i 56
++ charnanal=mem056
++ fnamein_1=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015090112_fhr24_ensmean
++ fnamein_2=/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015090112_fhr12_ensmean
++ fnameout=bin_2015090112_ensmean
++ /home/Mariusz.Pagowski/codes/src_da_utils/calc_diff_nemsio.x /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015090112_fhr24_ensmean /scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/BCKG/nemsio/sfg_2015090112_fhr12_ensmean bin_2015090112_ensmean
+ start reading nemsio file 
+ gfile_1,im=         768 jm=         384 lm=          63 nrec=         947 
+ gdatatype=bin4     modelname=GFS      ntrac=          18 iret=           0
+ gfile_1,nfhour=          24
+ gfile_2,nfhour=          12
+ pres            
+ sulf            
+ bc1             
+ bc2             
+ oc1             
+ oc2             
+ p25             
+ dust1           
+ dust2           
+ dust3           
+ dust4           
+ dust5           
+ seas1           
+ seas2           
+ seas3           
+ seas4           
++ ln -sf bin_2015090112_ensmean bin_2015080500_mem056
++ ((nanal=nanal+1))
++ /home/Mariusz.Pagowski/bin/ndate +12 2015090112
++ analdate=2015090200
++ [[ 2015090200 -le 2015090112 ]]

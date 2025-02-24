@@ -1,0 +1,171 @@
+import sys,os
+sys.path.append('_BASE_/pyscripts/lib')
+#from subprocess import check_output as chkop
+import subprocess as sbps
+import numpy as np
+import matplotlib
+matplotlib.use('agg')
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+from matplotlib.dates import (DAILY, DateFormatter,
+                              rrulewrapper, RRuleLocator)
+from ndate import ndate
+from datetime import datetime
+from datetime import timedelta
+
+fsave=1
+
+sa_path="_SAPATH_"
+area="_AREAMSK_"
+linetype="_LINETYPE_"
+
+modelname="_MODELNAME_"
+obsname1="_OBSNAME1_"
+obsname2="_OBSNAME2_"
+
+fcstvar="_FCSTVAR_"
+obsvar1="_OBSVAR1_"
+obsvar2="_OBSVAR2_"
+
+plev    =np.array((100, 250, 400, 500, 600, 700, 850, 925, 1000))
+pltlvidx=np.array((  1,   1,   1,   1,   1,   1,   1,   1,    0))
+#plev=(100, 150, 200, 250, 300, 400, 500, 600, 700, 800, 850, 900, 925, 950, 1000)
+datascale='1e+9'
+scaleintxt=datascale.replace('+','-')
+
+sdate=_SDATE_
+edate=_EDATE_
+inc_h=_INC_H_
+
+nlev=-1
+cdate=sdate
+while (cdate<=edate):
+    tmpfile="%s/%s_%s/%s/%s_%s_%s.stat" %(sa_path,modelname,obsname1,cdate,area,obsvar1,linetype)
+    f=open(tmpfile,'r')
+    tmpnlev=-1
+    for line in f.readlines():
+        tmpnlev=tmpnlev+1
+    f.close()
+    nlev=np.max((nlev,tmpnlev))
+    cdate=ndate(cdate,inc_h)
+
+ntime=0
+cdate=sdate
+while (cdate<=edate):
+    ntime=ntime+1
+    cdate=ndate(cdate,inc_h)
+
+p_matched=np.zeros((ntime,nlev),dtype='int')
+fbar=np.zeros((ntime,nlev),dtype='float')
+obar1=np.zeros_like(fbar)
+obar2=np.zeros_like(fbar)
+
+fbar[:,:]=np.nan
+obar1[:,:]=np.nan
+obar2[:,:]=np.nan
+
+dlist=[]
+ntime=0
+cdate=sdate
+while (cdate<=edate):
+    filename1="%s/%s_%s/%s/%s_%s_%s.stat" %(sa_path,modelname,obsname1,cdate,area,obsvar1,linetype)
+    f1=open(filename1,'r')
+    nlev=-1
+    for line in f1.readlines():
+        if (nlev==-1):
+           nlev=nlev+1
+           continue
+        else:
+           p_matched[ntime,nlev]=int(line.split()[24])
+           fbar[ntime,nlev]=float(line.split()[25])
+           obar1[ntime,nlev]=float(line.split()[26])
+           nlev=nlev+1
+    f1.close()
+    filename2="%s/%s_%s/%s/%s_%s_%s.stat" %(sa_path,modelname,obsname2,cdate,area,obsvar2,linetype)
+    f2=open(filename2,'r')
+    nlev=-1
+    for line in f2.readlines():
+        if (nlev==-1):
+           nlev=nlev+1
+           continue
+        else:
+           p_matched[ntime,nlev]=int(line.split()[24])
+           obar2[ntime,nlev]=float(line.split()[26])
+           nlev=nlev+1
+    f2.close()
+    dlist.append(str(cdate))
+    cdate=ndate(cdate,inc_h)
+    ntime=ntime+1
+print('get data')
+#
+# Plot data
+#
+syy=int(str(sdate)[:4]); smm=int(str(sdate)[4:6])
+sdd=int(str(sdate)[6:8]); shh=int(str(sdate)[8:10])
+eyy=int(str(edate)[:4]); emm=int(str(edate)[4:6])
+edd=int(str(edate)[6:8]); ehh=int(str(edate)[8:10])
+
+date1 = datetime(syy,smm,sdd,shh)
+date2 = datetime(eyy,emm,edd,ehh)
+delta = timedelta(hours=inc_h)
+dates = mdates.drange(date1, date2+delta, delta)
+
+rule = rrulewrapper(DAILY, byhour=6, interval=5)
+loc = RRuleLocator(rule)
+formatter = DateFormatter('%Y%h %n %d %Hz')
+
+print('get dates')
+
+leglist=[modelname,obsname1,obsname2]
+print(leglist)
+
+#sys.exit()
+#
+#  Timeseries
+#
+for nlv in np.arange(nlev):
+    if (pltlvidx[nlv]):
+       pltdata=np.zeros((ntime,3),dtype='float')
+       pltdata[:,0]=fbar[:,nlv]
+       pltdata[:,1]=obar1[:,nlv]
+       pltdata[:,2]=obar2[:,nlv]
+
+       fig=plt.figure(figsize=(8,5))
+       ax=plt.subplot()
+       ax.set_prop_cycle(color=['red','blue','green'])
+       ax.plot_date(dates,pltdata*float(datascale),'o-')
+       ax.xaxis.set_major_locator(loc)
+       ax.xaxis.set_major_formatter(formatter)
+       ax.xaxis.set_tick_params(labelsize=10)
+       ax.legend(leglist)
+       ax.set_ylabel('Mixing Ratio [kg/kg] (%s)' %(scaleintxt))
+       ax.grid()
+       ax.set_title('P%s %s %s' %(str(plev[nlv]),area,fcstvar),loc='left',pad=15)
+
+       if (fsave):
+           fig.savefig('./Time_P%s_%s.%s_%s_%s_%s.%s_%s.png' %(str(plev[nlv]),area,fcstvar,modelname,obsname1,obsname2,sdate,edate))
+
+#
+#  Vertical profile
+#
+pltdata=np.zeros((nlev,3),dtype='float')
+pltdata[:,0]=np.nanmean(fbar,axis=0)
+pltdata[:,1]=np.nanmean(obar1,axis=0)
+pltdata[:,2]=np.nanmean(obar2,axis=0)
+
+pltidx=np.where(pltlvidx==1)[0]
+
+fig=plt.figure(figsize=(5,8))
+ax=plt.subplot()
+ax.invert_yaxis()
+ax.set_prop_cycle(color=['red','blue','green'])
+ax.plot(pltdata[pltidx]*float(datascale),plev[pltidx],'o-')
+ax.legend(leglist)
+ax.set_xlabel('Mixing Ratio [kg/kg] (%s)' %(scaleintxt))
+ax.set_ylabel('Pressure[hPa]')
+ax.grid()
+ax.set_title('%s %s' %(area,fcstvar),loc='left')
+
+if (fsave):
+    fig.savefig('./Prof_%s.%s_%s_%s_%s.%s_%s.png' %(area,fcstvar,modelname,obsname1,obsname2,sdate,edate))
+

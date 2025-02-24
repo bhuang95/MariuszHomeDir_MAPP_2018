@@ -1,0 +1,83 @@
+Start Prologue v3.2-ad-2016.04.05 Tue Mar 14 18:43:04 UTC 2017 on Mother Superior(head node): t0086
+Node Access Status = SINGLEJOB
+Job 19818579.bqs3 started for user Mariusz.Pagowski in queue debug
+======= Running Sanity Checks =======
+----------------
+t0086
+----------------
+PASS!
+=======  Ended Sanity Checks  =======
+End Prologue v3.1-ad-2016.04.05 Tue Mar 14 18:43:06 UTC 2017 
+_______________________________________________________________
+
+Welcome to Theia
+  This system is Cray CS400 Linux Cluster
+
+Update History:
+
+  Version: v3.3-ad-2016.04.08
+    -- Added cach clearing before streams check
+       to eliminate potential false positives
+
+  Version: v3.2-ad-2016.04.05
+    -- Implemented parallel version of stream
+
+  Version: v3.1-ad-2016.03.01
+    -- Added streams check in epilogue
+    -- Removed Zeus/lustre specific code
+
+type:
+  module avail
+  for various Available Modules
+
+_______________________________________________________
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+MODULE LIST
+
+Currently Loaded Modules:
+  1) intel/14.0.2    3) netcdf/4.3.0     5) nco/4.4.5
+  2) mvapich2/2.1a   4) udunits/2.1.24
+
+ cannot read file 
+ sanl_2012081400_ensmean                                                        
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+ cannot read file 
+ sanl_2012081400_ensmean                                                        
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                     -1
+                                     -1
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 133596 RUNNING AT t0086
+=   EXIT CODE: 101
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+_______________________________________________________________
+Start Epilogue v3.4-ad-2016.08.08 Tue Mar 14 18:43:08 UTC 2017 
+=====================================
+Peak memory usage summary:
+  min =      39084  KB
+  ave =      39084  KB
+  max =      39084  KB
+
+All nodes sorted by nodelist order: (memory usage in KB)
+          % of      user        user          user         total       total
+Node      limit     max         limit        current      current      phys
+t0086      0.1       39084     63711232         3496      1739660     65990624 
+=====================================
+Job 19818579.bqs3 finished for user Mariusz.Pagowski in queue debug with exit code 101
+Node Access Status = SINGLEJOB
+Statistics  cput=00:00:01,energy_used=0,mem=0kb,vmem=0kb,walltime=00:00:04
+End Epilogue v3.1-ad-2016.04.05 Tue Mar 14 18:43:11 UTC 2017
+_______________________________________________________________

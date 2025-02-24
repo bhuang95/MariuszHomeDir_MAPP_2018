@@ -1,0 +1,4 @@
+AOD[$time,$grid_yt,$grid_xt]=0.0000000000001f;
+
+AOD@long_name = "AOD at 550nm" ;
+AOD@units = " " ;

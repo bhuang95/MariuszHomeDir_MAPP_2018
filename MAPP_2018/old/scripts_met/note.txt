@@ -1,0 +1,1 @@
+old scripts in /home/Mariusz.Pagowski/enkf_runs/scripts/met

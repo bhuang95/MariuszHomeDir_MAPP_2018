@@ -1,0 +1,329 @@
+PROGRAM interp_6hrfcst2obs_enkf
+
+
+!Mariusz Pagowski, CIRA, May. 2011
+
+! program to interpolate 6hr forcasts to sfc obs
+! for calculating rmse for dot plots
+! forecasts are averaged and valid at half-hour - slight aberration
+! takes forecasts valid at 6.5 hr rather than 5.5 hr
+! uses WPS modules for map projections and gsi input files
+! assumes that all forecasts during a period are present and 
+! obs cover forecasts period
+! output files are valid at times as in name not the initial hour 
+  
+  USE map_utils
+  USE llxy_module
+  USE interp_module
+
+  IMPLICIT NONE
+
+  REAL, PARAMETER :: o3max=200.,pmmax=60.
+!changed from pmmax=100
+  INTEGER, PARAMETER :: icut=2,jcut=2
+  
+  REAL :: latc,lonc,truelat_1,truelat_2,stdlon,dx,dy
+
+  CHARACTER(len=120) :: prefix,species,mapfile,spec
+  CHARACTER(len=120) :: suffix='.bin'
+  CHARACTER(len=120) :: obsfile,geoptfile,outfile,fcstdir
+
+  INTEGER ::  nxin,nyin,nf,nx,ny,nz,ndays,nfcst,nfcst1,nfcst6hr
+
+  REAL, PARAMETER :: eps_min=EPSILON(1.),grav=9.81,&
+       &blank=0.,blankp=blank-.01,unknown=-999.,unknownp=unknown+1
+
+  INTEGER, DIMENSION(1) :: interp_method=FOUR_POINT
+  REAL, ALLOCATABLE, DIMENSION(:,:,:) :: varin,geoptin
+  REAL, ALLOCATABLE, DIMENSION(:,:,:) :: var
+  INTEGER, PARAMETER :: nmaxread=2e6
+  REAL, DIMENSION(nmaxread) :: gridxobs=unknown,gridyobs=unknown,&
+       &gridiobs=unknown,gridjobs=unknown,height,geopt
+  CHARACTER(len=9), DIMENSION(nmaxread) :: code
+
+  TYPE(proj_info) :: proj
+
+  CHARACTER(len=2) :: icchar,ctrash
+  CHARACTER(len=19), ALLOCATABLE, DIMENSION(:) :: ctime
+  CHARACTER(len=19) :: obstime
+  CHARACTER(len=4) :: year
+  CHARACTER(len=2) :: month,day,hour,mins,sec,cdays2skip
+  CHARACTER(len=120) :: input_name
+  CHARACTER(len=120), ALLOCATABLE, DIMENSION(:) :: fnames
+  INTEGER :: itrash,jul,julobs,nst,nstin,proj_code,&
+       &julmin,julmax,jdate
+  REAL, DIMENSION(nmaxread) :: lat,lon,julstamp
+  INTEGER :: iyear,imonth,iday,ihour,imin,days2skip
+  INTEGER, DIMENSION(nmaxread) :: site
+  LOGICAL, DIMENSION(nmaxread) :: outside
+  REAL :: ilon,jlat,sumi,sumj,bi,bj,sdi,sdj,corrsum,rnf,rtrash,concmax
+  REAL, DIMENSION(nmaxread) :: obs,fcst
+  INTEGER, ALLOCATABLE, DIMENSION(:) :: iyearinit,imonthinit,&
+       &idayinit,ihourinit
+
+
+  CHARACTER (LEN=120)                 :: command
+
+  INTEGER  :: iargc,i,j,k,l,fcstunit=200,ix,iy,&
+       &mapunit=50,obsunit=51,geoptunit=52,outunit,&
+       &outunit00=53,outunit06=54,outunit12=55,outunit18=56,&
+       &count_start,count_end,crate,loslen
+  REAL :: ric,rjc
+  
+
+  CALL SYSTEM_CLOCK(count_start,crate)
+
+  IF (iargc() < 6) THEN
+     PRINT *,'Requires 6 input parameters: see script'
+     PRINT *,'Stopping'
+     STOP
+  ENDIF
+
+  CALL getarg(1,mapfile)
+  CALL getarg(2,species)
+  call getarg(3,obsfile)
+  CALL getarg(4,fcstdir)
+  call getarg(5,geoptfile)
+  CALL getarg(6,outfile)
+  CALL getarg(7,cdays2skip)
+
+  READ(cdays2skip,'(i2)')days2skip
+
+  OPEN(unit=mapunit,file=mapfile,form='formatted')
+  READ(mapunit,*)ctrash
+  READ(mapunit,*)latc,lonc,truelat_1,truelat_2,stdlon,dx
+  CLOSE(mapunit)
+
+  dy=dx
+  
+  input_name=TRIM(fcstdir)//'/*'//suffix
+
+  loslen = LEN ( command )
+  CALL all_spaces ( command , loslen )
+
+  WRITE ( command , FMT='("ls -1 ",A," > .foo")' ) TRIM (input_name)
+
+  CALL SYSTEM ( TRIM ( command ) )
+  CALL SYSTEM ( '( cat .foo | wc -l > .foo1 )' )
+
+!  Read the number of files.
+  OPEN (FILE   = '.foo1'       , &
+       UNIT   = 112           , &
+       STATUS = 'OLD'         , &
+       ACCESS = 'SEQUENTIAL'  , &
+       FORM   = 'FORMATTED'     )
+
+  READ ( 112 , * ) nf
+  CLOSE ( 112 )
+  PRINT *,'There are nf = ',nf,' forecast files'
+
+  ALLOCATE(fnames(nf))
+
+!  Open the file that has the list of filenames.
+  OPEN (FILE   = '.foo'        , &
+       UNIT   = 111           , &
+       STATUS = 'OLD'         , &
+       ACCESS = 'SEQUENTIAL'  , &
+       FORM   = 'FORMATTED'     )
+  
+!  Read all of the file names and store them.
+
+  DO k = 1 , nf
+     READ ( 111 , FMT='(A)' ) fnames(k)
+  ENDDO
+
+  CLOSE(111)
+
+!  CALL SYSTEM ( '/bin/rm -f .foo'  )
+!  CALL SYSTEM ( '/bin/rm -f .foo1' )
+
+  ALLOCATE(iyearinit(nf),imonthinit(nf),idayinit(nf),ihourinit(nf))
+
+  DO k=1,nf
+     i=INDEX(fnames(k),'/',BACK=.TRUE.)+1
+     year=fnames(k)(i+1:i+4)
+     month=fnames(k)(i+6:i+7)
+     day=fnames(k)(i+9:i+10)
+     hour=fnames(k)(i+12:i+13)
+     READ(year,'(i4)') iyearinit(k)
+     READ(month,'(i2)') imonthinit(k)
+     READ(day,'(i2)') idayinit(k)
+     READ(hour,'(i2)') ihourinit(k)
+  ENDDO
+
+  julmin=jdate(iyearinit(1),imonthinit(1),idayinit(1)+days2skip)
+
+  julmax=jdate(iyearinit(nf),imonthinit(nf),idayinit(nf))+1
+
+  OPEN(fcstunit,file=fnames(1),form='unformatted')
+  READ(fcstunit)nxin,nyin,nz,nfcst
+  ALLOCATE(varin(nxin,nyin,nfcst))
+  nx=nxin-2*icut
+  ny=nyin-2*jcut
+  nfcst1=nfcst-1
+  CLOSE(fcstunit)
+
+  nfcst6hr=6
+
+  ALLOCATE(geoptin(nxin,nyin,1))
+  
+  PRINT *,'Reading model geopt file'
+  
+  OPEN(geoptunit,file=geoptfile,form='unformatted')
+  READ(geoptunit)ix,iy
+  IF (ix /= nxin .OR. iy /= nyin) THEN
+     PRINT *,'DIMENSION MISTMATCH FOR GEOPT - STOPPING'
+     STOP
+  ENDIF
+  READ(geoptunit)geoptin
+  CLOSE(geoptunit)
+
+  geoptin=geoptin/grav
+
+  CALL map_init(proj)
+
+  proj_code = PROJ_LC
+
+  ric=.5*REAL(nxin-1)+1.
+  rjc=.5*REAL(nyin-1)+1.
+
+  CALL map_set(proj_code=proj_code,proj=proj,&
+       &truelat1=truelat_1,truelat2=truelat_2,&
+       &lat1=latc,lon1=lonc,&
+       &knowni=ric,knownj=rjc,&
+       &stdlon=stdlon,&
+       &dx=dx,&
+       &r_earth=EARTH_RADIUS_M)
+
+  
+  julstamp=unknown
+  l=1
+
+  IF (species=='PM2_5_DRY') THEN 
+     species='pm2_5'
+     concmax=pmmax
+  ELSE IF (species=='o3') THEN
+     concmax=o3max
+  ENDIF
+  
+  OPEN(obsunit,file=obsfile,form='formatted')
+  READ(obsunit,'(a)')spec
+  IF (TRIM(spec) /= TRIM(species)) THEN
+     PRINT *,'Wrong species in input file ',TRIM(obsfile)
+     PRINT *,'Stopping'
+     STOP
+  ENDIF
+  
+  DO WHILE(.TRUE.)
+
+     READ(obsunit,'(5i5,2f11.5,f7.2,i3,f10.1,a11)',END=100)&
+          &iyear,imonth,iday,ihour,imin,&
+          &lat(l),lon(l),obs(l),site(l),height(l),code(l)
+     
+     julobs=jdate(iyear,imonth,iday)
+
+     IF (julobs >= julmin .AND. julobs <= julmax .AND. &
+          &obs(l) >= 0. .AND. obs(l) < concmax ) THEN
+
+        julstamp(l)=(julobs-julmin+1)*1e2+ihour
+     
+        CALL lltoxy(proj, lat(l), lon(l), ilon, jlat, HH)
+!     CALL xytoll(proj, ilon, jlat, lat(l), lon(l), HH)
+     
+        IF (  jlat > jcut .AND. jlat < nyin-jcut .AND. &
+             &ilon > icut .AND. ilon < nxin-icut ) THEN 
+           gridiobs(l)=ilon
+           gridjobs(l)=jlat
+           gridxobs(l)=ilon-1.
+           gridyobs(l)=jlat-1.
+           l=l+1
+        ENDIF
+     ENDIF
+  ENDDO
+  
+100 CONTINUE
+  
+  CLOSE(obsunit)
+  
+  nst=l
+
+  WRITE(*,*)'There are ',nst,' valid obs for this period'
+  
+  WRITE(*,*)'Reading background files'
+  OPEN(outunit00,file=TRIM(outfile)//'.00z',form='formatted')
+  OPEN(outunit06,file=TRIM(outfile)//'.06z',form='formatted')
+  OPEN(outunit12,file=TRIM(outfile)//'.12z',form='formatted')
+  OPEN(outunit18,file=TRIM(outfile)//'.18z',form='formatted')
+
+
+  DO k=1,nf
+     PRINT *,fnames(k)
+     fcstunit=k+200
+     OPEN(fcstunit,file=fnames(k),form='unformatted')
+     READ(fcstunit)ix,iy
+     IF (ix /= nxin .OR. iy /= nyin) THEN
+        PRINT *,'DIMENSION MISTMATCH - STOPPING'
+        STOP
+     ENDIF
+     READ(fcstunit)varin
+     CLOSE(fcstunit)
+
+     IF (TRIM(species)=='o3') THEN
+        varin = varin*1.e3
+     ENDIF
+     
+     i=nfcst6hr
+        
+     ihour=i+ihourinit(k)
+     iday=ihour/24
+     ihour=MOD(ihour,24)
+     
+     jul=(jdate(iyearinit(k),imonthinit(k),idayinit(k))-julmin+1+&
+          &+iday)*1e2+ihour
+
+     SELECT CASE(ihourinit(k))
+
+     CASE(0)
+        outunit=outunit06
+     CASE(6)
+        outunit=outunit12
+     CASE(12)
+        outunit=outunit18
+     CASE(18)
+        outunit=outunit00
+
+     END SELECT
+
+     DO l=1,nst
+        
+        IF (jul==NINT(julstamp(l))) THEN
+           
+           fcst(l)=four_pt(gridiobs(l), gridjobs(l),&
+                &1,varin(:,:,i+1),1,nxin,1,nyin,1,1,unknown,&
+                &interp_method,1)
+           geopt(l)=four_pt(gridiobs(l), gridjobs(l),&
+                &1,geoptin,1,nxin,1,nyin,1,1,unknown,&
+                &interp_method,1)
+           
+           WRITE(outunit,'(i7,4f10.1,i5,4f10.4,a10,f10.1)')l,&
+                &obs(l),height(l),&
+                &fcst(l),geopt(l),site(l),lat(l),lon(l),&
+                &gridiobs(l),gridjobs(l),code(l),REAL(jul)+.5
+           
+        ENDIF
+        
+     ENDDO
+  ENDDO
+
+  CLOSE(outunit00)
+  CLOSE(outunit06)
+  CLOSE(outunit12)
+  CLOSE(outunit18)
+
+  CALL SYSTEM_CLOCK(count_end,crate)
+  
+  PRINT *,(count_end-count_start)/REAL(crate),' sec'
+
+END PROGRAM interp_6hrfcst2obs_enkf
+
+

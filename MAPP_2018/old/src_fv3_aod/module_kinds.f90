@@ -1,0 +1,7 @@
+MODULE module_kinds
+
+  IMPLICIT NONE
+  
+  INTEGER, PARAMETER :: SINGLE=KIND(1.0),DOUBLE=KIND(1.d0)
+
+END MODULE module_kinds

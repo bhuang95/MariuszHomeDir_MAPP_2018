@@ -1,0 +1,36 @@
+FC = ifort
+FCFLAGSFREE = -O2 -free -C
+FCFLAGSFIXED = -O2 -fixed -C
+LINKFLAGS = 
+RM = /bin/rm -f
+BIG_ENDIAN = convert big_endian
+FORTRANLIB = -I$(HDF5)/include $(HDF5)/lib/libhdf5_fortran.a
+LIBSHDF = $(FORTRANLIB) $(HDF5)/lib/libhdf5.a
+#LIBSZ = $(SZIP)/lib
+#LIB  = $(LIBSZ) -lm
+#LIB       = $(LIBZ) $(LIBSZ) -lm
+
+
+.SUFFIXES:
+.SUFFIXES: .f90 .f .o
+
+.f90.o: 
+	$(FC) -c $(FCFLAGSFREE) $*.f90	
+.f.o: 
+	$(FC) -c $(FCFLAGSFIXED) $*.f	
+
+OBJ1 =  hdf2bufr.f90
+MODULE1 = 
+
+hdf2bufr.x: $(MODULE1) $(OBJ1) 
+	$(FC) -o $@ $(MODULE1) $(OBJ1) $(LIBSHDF) -lm 
+
+clean:
+	$(RM) *.o *.x *.mod 
+
+
+
+
+
+
+

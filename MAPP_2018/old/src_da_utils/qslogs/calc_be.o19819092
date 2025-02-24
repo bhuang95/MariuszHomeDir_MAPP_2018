@@ -1,0 +1,61 @@
+Start Prologue v3.2-ad-2016.04.05 Tue Mar 14 18:46:04 UTC 2017 on Mother Superior(head node): t0052
+Node Access Status = SINGLEJOB
+Job 19819092.bqs3 started for user Mariusz.Pagowski in queue debug
+======= Running Sanity Checks =======
+----------------
+t0052
+----------------
+PASS!
+=======  Ended Sanity Checks  =======
+End Prologue v3.1-ad-2016.04.05 Tue Mar 14 18:46:06 UTC 2017 
+_______________________________________________________________
+
+Welcome to Theia
+  This system is Cray CS400 Linux Cluster
+
+Update History:
+
+  Version: v3.3-ad-2016.04.08
+    -- Added cach clearing before streams check
+       to eliminate potential false positives
+
+  Version: v3.2-ad-2016.04.05
+    -- Implemented parallel version of stream
+
+  Version: v3.1-ad-2016.03.01
+    -- Added streams check in epilogue
+    -- Removed Zeus/lustre specific code
+
+type:
+  module avail
+  for various Available Modules
+
+_______________________________________________________
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+MODULE LIST
+
+Currently Loaded Modules:
+  1) intel/14.0.2    3) netcdf/4.3.0     5) nco/4.4.5
+  2) mvapich2/2.1a   4) udunits/2.1.24
+
+         574
+         574
+_______________________________________________________________
+Start Epilogue v3.4-ad-2016.08.08 Tue Mar 14 18:46:08 UTC 2017 
+=====================================
+Peak memory usage summary:
+  min =      30244  KB
+  ave =      30244  KB
+  max =      30244  KB
+
+All nodes sorted by nodelist order: (memory usage in KB)
+          % of      user        user          user         total       total
+Node      limit     max         limit        current      current      phys
+t0052      0.0       30244     63711232         4428      1736104     65990624 
+=====================================
+Job 19819092.bqs3 finished for user Mariusz.Pagowski in queue debug with exit code 0
+Node Access Status = SINGLEJOB
+Statistics  cput=00:00:01,energy_used=0,mem=0kb,vmem=0kb,walltime=00:00:04
+End Epilogue v3.1-ad-2016.04.05 Tue Mar 14 18:46:10 UTC 2017
+_______________________________________________________________

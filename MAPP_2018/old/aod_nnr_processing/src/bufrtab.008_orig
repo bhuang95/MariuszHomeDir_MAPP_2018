@@ -1,0 +1,62 @@
+.------------------------------------------------------------------------------.
+| ------------   USER DEFINITIONS FOR TABLE-A TABLE-B TABLE D   -------------- |
+|------------------------------------------------------------------------------|
+| MNEMONIC | NUMBER | DESCRIPTION                                              |
+|----------|--------|----------------------------------------------------------|
+|          |        |                                                          |
+| NC008041 | A62199 | MSG TYPE 008-041 MODIS AEROSOL OPTICAL DEPTH (AOD) DATA  |
+|          |        |                                                          |
+| SAID     | 001007 | Satellite identifier                                     |
+| AODS     | 001028 | Aerosol Optical Depth (AOD) source                       |
+| YEAR     | 004001 | Year                                                     |
+| MNTH     | 004002 | Month                                                    |
+| DAYS     | 004003 | Day                                                      |
+| HOUR     | 004004 | Hour                                                     |
+| MINU     | 004005 | Minute                                                   |
+| SECO     | 004006 | Second                                                   |
+| CLATH    | 005001 | Latitude (high accuracy)                                 |
+| SOLAZI   | 005022 | Solar azimuth                                            |
+| CLONH    | 006001 | Longitude (high accuracy)                                |
+| SOZA     | 007025 | Solar zenith angle                                       |
+| OPTD     | 015024 | Optical depth                                            |
+| SCATTA   | 015194 | Scattering angle                                         |
+| AEROTP   | 015195 | Aerosol type land                                        |
+| STYP     | 013241 | Surface type                                             |
+| DBCF     | 015200 | Deep Blue Aerosol Confidence Flag                        |
+| QAOD     | 033241 | AOD Quality Flag                                         |
+|          |        |                                                          |
+|------------------------------------------------------------------------------|
+| MNEMONIC | SEQUENCE                                                          |
+|----------|-------------------------------------------------------------------|
+|          |                                                                   |
+*          |                                                                   |
+* MODIS AEROSOL DEPTH REPORTS                                                  |
+*          |                                                                   |
+| NC008041 | SAID      AODS      CLONH     CLATH     YEAR      MNTH            |
+| NC008041 | DAYS      HOUR      MINU      SECO      SOZA      SOLAZI          |
+| NC008041 | SCATTA    OPTD      AEROTP    STYP      DBCF      QAOD            |
+|          |                                                                   |
+|------------------------------------------------------------------------------|
+| MNEMONIC | SCAL | REFERENCE   | BIT | UNITS                    |-------------|
+|----------|------|-------------|-----|--------------------------|-------------|
+|          |      |             |     |                          |-------------|
+| SAID     |    0 |           0 |  10 | Code table               |-------------|
+| AODS     |    0 |           0 |   5 | Code table               |-------------|
+| YEAR     |    0 |           0 |  12 | Year                     |-------------|
+| MNTH     |    0 |           0 |   4 | Month                    |-------------|
+| DAYS     |    0 |           0 |   6 | Day                      |-------------|
+| HOUR     |    0 |           0 |   5 | Hour                     |-------------|
+| MINU     |    0 |           0 |   6 | Minute                   |-------------|
+| SECO     |    0 |           0 |   6 | Second                   |-------------|
+| CLATH    |    5 |    -9000000 |  25 | Degree                   |-------------|
+| SOLAZI   |    2 |           0 |  16 | Degree true              |-------------|
+| CLONH    |    5 |   -18000000 |  26 | Degree                   |-------------|
+| SOZA     |    2 |       -9000 |  15 | Degree                   |-------------|
+| OPTD     |    4 |           0 |  24 | Numeric                  |-------------|
+| SCATTA   |    2 |           0 |  16 | Degree                   |-------------|
+| AEROTP   |    0 |           0 |   4 | Code table               |-------------|
+| STYP     |    0 |           0 |   3 | Code table               |-------------|
+| DBCF     |    0 |           0 |   3 | Code table               |-------------|
+| QAOD     |    0 |           0 |   3 | Code table               |-------------|
+|          |      |             |     |                          |-------------|
+`------------------------------------------------------------------------------'

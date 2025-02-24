@@ -1,0 +1,44 @@
+window begin: datemcf
+window length: PT2H
+geometry:
+  fms initialization:
+    namelist filename: Data/fv3files/fmsmpp.nml
+    field table filename: Data/fv3files/field_table_gfdl
+  akbk: Data/fv3files/akbk64.nc4
+  npx: 97
+  npy: 97
+  npz: 64
+  field metadata override: Data/fieldmetadata/ufs-pm25.yaml
+state:
+  datetime: datecf
+  filetype: fms restart
+  datapath: Data/inputs/
+  filename_sfcd: datefv3.fv_pm25.res.nc
+  filename_cplr: datefv3.coupler.res
+  state variables: [pm25]
+observations:
+  observers:
+  - obs space:
+      name: pm25
+      obsdatain:
+        engine:
+          type: H5File
+          obsfile: Data/obs/openaq_pm25.datestd.nc4
+      obsdataout:
+        engine:
+          type: H5File
+          obsfile: Data/hofx/openaq_pm25_hofx.datestd.nc4
+      simulated variables: [pm25]
+    obs operator:
+      name: Identity
+    obs error:
+      covariance model: diagonal
+    obs filters:
+    - filter: Temporal Thinning
+      seed_time: datecf
+      min_spacing: PT02H
+      category_variable:
+        name: MetaData/stationIdentification
+#    - filter: Gaussian Thinning
+#      horizontal_mesh:   50.0 #km 
+#      round_horizontal_bin_count_to_nearest: true

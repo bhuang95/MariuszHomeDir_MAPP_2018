@@ -1,0 +1,6 @@
+All of the build information is in sorc/Makefile, but back then there were\
+ still default module versions. I'm guessing it was intel/18.0.5.274 and i\
+mpi/2018.4.274. Later versions should work too.
+
+
+from /scratch2/BMC/wrfruc/Samuel.Trahan/viirs-thinning/mpiserial

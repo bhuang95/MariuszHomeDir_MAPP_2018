@@ -1,0 +1,36 @@
+from Lisa B.
+The following code replaces cellular_automata.f90 and update_ca.f90:
+
+/scratch2/BMC/rem/Lisa.Bengtsson/ufs-weather-model/stochastic_physics/cellular_automata_global.F90
+
+/scratch2/BMC/rem/Lisa.Bengtsson/ufs-weather-model/stochastic_physics/cellular_automata_sgs.F90
+
+/scratch2/BMC/rem/Lisa.Bengtsson/ufs-weather-model/stochastic_physics/update_ca.F90
+
+You need an updated makefile (to look for the above routines):
+/scratch2/BMC/rem/Lisa.Bengtsson/ufs-weather-model/stochastic_physics/makefile
+
+
+And you need the updated call:
+/scratch2/BMC/rem/Lisa.Bengtsson/ufs-weather-model/FV3/atmos_model.F90
+
+For a global CA you can set the namelist:
+&gfs_physics_nml
+nca            = 1
+ncells         = 1
+nfracseed      = 0.5
+nlives         = 25 <- tuning parameter
+nthresh        = 0.
+nseed          = 100
+do_ca          = .true.
+ca_global      = .true. <-this activates the CA on the global grid
+ca_sgs         = .false.
+ca_smooth      = .false.
+nspinup        = 100
+iseed_ca       = 0
+pert_trigger   = .false.
+pert_flux      = .false.
+ca_amplitude   = 1.0
+nsmooth        = 100
+/
+

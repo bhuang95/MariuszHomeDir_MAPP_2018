@@ -1,0 +1,22 @@
+orog                 orog                 sfc                  bilinear             F 2
+psfc                 pres                 sfc                  bilinear             F 2
+u10m                 ugrd                 10 m above gnd       bilinear             F 2
+v10m                 vgrd                 10 m above gnd       bilinear             F 2
+weasd                weasd                sfc                  nrstnghbr            T 2
+f10m                 f10m                 10 m above gnd       bilinear             F 2
+q2m                  spfh                 2 m above gnd        bilinear             T 2
+t2m                  tmp                  2 m above gnd        bilinear             F 2
+tsfc                 tmp                  sfc                  bilinear             F 2
+vtype                vtype                sfc                  nrstnghbr            F 2
+stype                sotyp                sfc                  nrstnghbr            F 2
+slmsk                land                 sfc                  nrstnghbr            F 2
+vfrac                veg                  sfc                  bilinear             T 2
+zorl                 sfcr                 sfc                  bilinear             T 2
+soilt1               stc                  soil layer           nrstnghbr            F 2
+soilw1               smc                  soil layer           nrstnghbr            F 2
+ucomp                ugrd                 mid layer            bilinear             F 3
+vcomp                vgrd                 mid layer            bilinear             F 3
+sphum                spfh                 mid layer            bilinear             T 3
+temp                 tmp                  mid layer            bilinear             F 3
+liq_wat              clwmr                mid layer            bilinear             T 3
+o3mr                 o3mr                 mid layer            bilinear             T 3

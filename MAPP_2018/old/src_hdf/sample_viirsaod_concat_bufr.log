@@ -1,0 +1,762 @@
++ BASEDIR=/scratch3/BMC/chem-var/pagowski/tmp
++ INDIR=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat
++ OUTDIR=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample
++ bufr_table=AOT_BUFR_Table.txt
++ ident_start=2015080100
++ ident_end=2015090100
++ sampling_frequency=50
++ cycle_frequency=6
++ ndate=/home/Mariusz.Pagowski/bin/ndate
++ [[ ! -r /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample ]]
++ ident=2015080100
++ [[ 2015080100 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080100
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080100
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080100 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080100
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080100
++ ident=2015080106
++ [[ 2015080106 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080106
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080106
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080106 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080106
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080106
++ ident=2015080112
++ [[ 2015080112 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080112
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080112
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080112 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080112
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080112
++ ident=2015080118
++ [[ 2015080118 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080118
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080118
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080118 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080118
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080118
++ ident=2015080200
++ [[ 2015080200 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080200
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080200
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080200 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080200
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080200
++ ident=2015080206
++ [[ 2015080206 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080206
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080206
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080206 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080206
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080206
++ ident=2015080212
++ [[ 2015080212 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080212
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080212
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080212 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080212
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080212
++ ident=2015080218
++ [[ 2015080218 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080218
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080218
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080218 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080218
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080218
++ ident=2015080300
++ [[ 2015080300 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080300
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080300
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080300 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080300
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080300
++ ident=2015080306
++ [[ 2015080306 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080306
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080306
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080306 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080306
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080306
++ ident=2015080312
++ [[ 2015080312 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080312
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080312
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080312 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080312
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080312
++ ident=2015080318
++ [[ 2015080318 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080318
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080318
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080318 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080318
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080318
++ ident=2015080400
++ [[ 2015080400 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080400
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080400
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080400 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080400
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080400
++ ident=2015080406
++ [[ 2015080406 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080406
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080406
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080406 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080406
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080406
++ ident=2015080412
++ [[ 2015080412 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080412
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080412
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080412 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080412
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080412
++ ident=2015080418
++ [[ 2015080418 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080418
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080418
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080418 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080418
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080418
++ ident=2015080500
++ [[ 2015080500 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080500
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080500
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080500 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080500
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080500
++ ident=2015080506
++ [[ 2015080506 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080506
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080506
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080506 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080506
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080506
++ ident=2015080512
++ [[ 2015080512 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080512
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080512
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080512 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080512
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080512
++ ident=2015080518
++ [[ 2015080518 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080518
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080518
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080518 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080518
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080518
++ ident=2015080600
++ [[ 2015080600 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080600
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080600
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080600 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080600
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080600
++ ident=2015080606
++ [[ 2015080606 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080606
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080606
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080606 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080606
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080606
++ ident=2015080612
++ [[ 2015080612 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080612
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080612
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080612 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080612
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080612
++ ident=2015080618
++ [[ 2015080618 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080618
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080618
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080618 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080618
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080618
++ ident=2015080700
++ [[ 2015080700 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080700
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080700
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080700 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080700
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080700
++ ident=2015080706
++ [[ 2015080706 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080706
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080706
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080706 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080706
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080706
++ ident=2015080712
++ [[ 2015080712 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080712
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080712
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080712 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080712
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080712
++ ident=2015080718
++ [[ 2015080718 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080718
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080718
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080718 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080718
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080718
++ ident=2015080800
++ [[ 2015080800 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080800
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080800
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080800 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080800
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080800
++ ident=2015080806
++ [[ 2015080806 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080806
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080806
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080806 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080806
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080806
++ ident=2015080812
++ [[ 2015080812 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080812
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080812
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080812 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080812
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080812
++ ident=2015080818
++ [[ 2015080818 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080818
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080818
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080818 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080818
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080818
++ ident=2015080900
++ [[ 2015080900 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080900
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080900
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080900 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080900
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080900
++ ident=2015080906
++ [[ 2015080906 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080906
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080906
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080906 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080906
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080906
++ ident=2015080912
++ [[ 2015080912 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080912
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080912
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080912 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080912
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080912
++ ident=2015080918
++ [[ 2015080918 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080918
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080918
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015080918 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015080918
++ /home/Mariusz.Pagowski/bin/ndate +6 2015080918
++ ident=2015081000
++ [[ 2015081000 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081000
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081000
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081000 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081000
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081000
++ ident=2015081006
++ [[ 2015081006 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081006
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081006
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081006 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081006
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081006
++ ident=2015081012
++ [[ 2015081012 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081012
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081012
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081012 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081012
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081012
++ ident=2015081018
++ [[ 2015081018 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081018
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081018
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081018 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081018
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081018
++ ident=2015081100
++ [[ 2015081100 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081100
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081100
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081100 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081100
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081100
++ ident=2015081106
++ [[ 2015081106 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081106
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081106
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081106 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081106
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081106
++ ident=2015081112
++ [[ 2015081112 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081112
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081112
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081112 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081112
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081112
++ ident=2015081118
++ [[ 2015081118 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081118
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081118
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081118 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081118
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081118
++ ident=2015081200
++ [[ 2015081200 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081200
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081200
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081200 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081200
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081200
++ ident=2015081206
++ [[ 2015081206 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081206
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081206
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081206 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081206
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081206
++ ident=2015081212
++ [[ 2015081212 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081212
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081212
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081212 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081212
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081212
++ ident=2015081218
++ [[ 2015081218 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081218
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081218
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081218 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081218
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081218
++ ident=2015081300
++ [[ 2015081300 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081300
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081300
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081300 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081300
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081300
++ ident=2015081306
++ [[ 2015081306 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081306
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081306
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081306 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081306
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081306
++ ident=2015081312
++ [[ 2015081312 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081312
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081312
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081312 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081312
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081312
++ ident=2015081318
++ [[ 2015081318 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081318
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081318
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081318 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081318
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081318
++ ident=2015081400
++ [[ 2015081400 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081400
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081400
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081400 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081400
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081400
++ ident=2015081406
++ [[ 2015081406 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081406
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081406
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081406 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081406
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081406
++ ident=2015081412
++ [[ 2015081412 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081412
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081412
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081412 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081412
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081412
++ ident=2015081418
++ [[ 2015081418 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081418
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081418
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081418 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081418
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081418
++ ident=2015081500
++ [[ 2015081500 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081500
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081500
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081500 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081500
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081500
++ ident=2015081506
++ [[ 2015081506 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081506
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081506
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081506 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081506
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081506
++ ident=2015081512
++ [[ 2015081512 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081512
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081512
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081512 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081512
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081512
++ ident=2015081518
++ [[ 2015081518 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081518
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081518
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081518 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081518
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081518
++ ident=2015081600
++ [[ 2015081600 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081600
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081600
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081600 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081600
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081600
++ ident=2015081606
++ [[ 2015081606 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081606
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081606
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081606 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081606
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081606
++ ident=2015081612
++ [[ 2015081612 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081612
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081612
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081612 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081612
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081612
++ ident=2015081618
++ [[ 2015081618 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081618
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081618
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081618 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081618
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081618
++ ident=2015081700
++ [[ 2015081700 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081700
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081700
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081700 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081700
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081700
++ ident=2015081706
++ [[ 2015081706 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081706
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081706
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081706 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081706
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081706
++ ident=2015081712
++ [[ 2015081712 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081712
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081712
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081712 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081712
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081712
++ ident=2015081718
++ [[ 2015081718 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081718
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081718
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081718 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081718
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081718
++ ident=2015081800
++ [[ 2015081800 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081800
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081800
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081800 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081800
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081800
++ ident=2015081806
++ [[ 2015081806 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081806
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081806
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081806 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081806
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081806
++ ident=2015081812
++ [[ 2015081812 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081812
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081812
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081812 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081812
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081812
++ ident=2015081818
++ [[ 2015081818 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081818
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081818
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081818 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081818
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081818
++ ident=2015081900
++ [[ 2015081900 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081900
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081900
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081900 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081900
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081900
++ ident=2015081906
++ [[ 2015081906 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081906
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081906
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081906 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081906
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081906
++ ident=2015081912
++ [[ 2015081912 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081912
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081912
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081912 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081912
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081912
++ ident=2015081918
++ [[ 2015081918 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081918
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081918
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015081918 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015081918
++ /home/Mariusz.Pagowski/bin/ndate +6 2015081918
++ ident=2015082000
++ [[ 2015082000 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082000
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082000
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082000 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082000
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082000
++ ident=2015082006
++ [[ 2015082006 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082006
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082006
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082006 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082006
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082006
++ ident=2015082012
++ [[ 2015082012 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082012
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082012
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082012 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082012
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082012
++ ident=2015082018
++ [[ 2015082018 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082018
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082018
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082018 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082018
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082018
++ ident=2015082100
++ [[ 2015082100 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082100
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082100
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082100 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082100
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082100
++ ident=2015082106
++ [[ 2015082106 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082106
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082106
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082106 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082106
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082106
++ ident=2015082112
++ [[ 2015082112 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082112
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082112
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082112 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082112
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082112
++ ident=2015082118
++ [[ 2015082118 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082118
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082118
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082118 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082118
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082118
++ ident=2015082200
++ [[ 2015082200 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082200
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082200
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082200 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082200
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082200
++ ident=2015082206
++ [[ 2015082206 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082206
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082206
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082206 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082206
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082206
++ ident=2015082212
++ [[ 2015082212 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082212
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082212
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082212 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082212
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082212
++ ident=2015082218
++ [[ 2015082218 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082218
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082218
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082218 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082218
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082218
++ ident=2015082300
++ [[ 2015082300 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082300
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082300
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082300 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082300
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082300
++ ident=2015082306
++ [[ 2015082306 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082306
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082306
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082306 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082306
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082306
++ ident=2015082312
++ [[ 2015082312 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082312
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082312
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082312 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082312
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082312
++ ident=2015082318
++ [[ 2015082318 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082318
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082318
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082318 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082318
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082318
++ ident=2015082400
++ [[ 2015082400 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082400
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082400
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082400 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082400
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082400
++ ident=2015082406
++ [[ 2015082406 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082406
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082406
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082406 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082406
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082406
++ ident=2015082412
++ [[ 2015082412 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082412
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082412
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082412 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082412
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082412
++ ident=2015082418
++ [[ 2015082418 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082418
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082418
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082418 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082418
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082418
++ ident=2015082500
++ [[ 2015082500 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082500
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082500
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082500 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082500
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082500
++ ident=2015082506
++ [[ 2015082506 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082506
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082506
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082506 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082506
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082506
++ ident=2015082512
++ [[ 2015082512 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082512
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082512
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082512 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082512
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082512
++ ident=2015082518
++ [[ 2015082518 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082518
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082518
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082518 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082518
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082518
++ ident=2015082600
++ [[ 2015082600 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082600
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082600
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082600 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082600
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082600
++ ident=2015082606
++ [[ 2015082606 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082606
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082606
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082606 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082606
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082606
++ ident=2015082612
++ [[ 2015082612 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082612
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082612
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082612 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082612
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082612
++ ident=2015082618
++ [[ 2015082618 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082618
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082618
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082618 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082618
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082618
++ ident=2015082700
++ [[ 2015082700 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082700
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082700
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082700 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082700
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082700
++ ident=2015082706
++ [[ 2015082706 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082706
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082706
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082706 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082706
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082706
++ ident=2015082712
++ [[ 2015082712 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082712
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082712
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082712 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082712
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082712
++ ident=2015082718
++ [[ 2015082718 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082718
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082718
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082718 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082718
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082718
++ ident=2015082800
++ [[ 2015082800 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082800
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082800
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082800 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082800
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082800
++ ident=2015082806
++ [[ 2015082806 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082806
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082806
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082806 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082806
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082806
++ ident=2015082812
++ [[ 2015082812 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082812
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082812
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082812 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082812
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082812
++ ident=2015082818
++ [[ 2015082818 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082818
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082818
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082818 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082818
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082818
++ ident=2015082900
++ [[ 2015082900 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082900
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082900
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082900 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082900
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082900
++ ident=2015082906
++ [[ 2015082906 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082906
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082906
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082906 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082906
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082906
++ ident=2015082912
++ [[ 2015082912 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082912
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082912
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082912 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082912
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082912
++ ident=2015082918
++ [[ 2015082918 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082918
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082918
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015082918 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015082918
++ /home/Mariusz.Pagowski/bin/ndate +6 2015082918
++ ident=2015083000
++ [[ 2015083000 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015083000
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015083000
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015083000 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015083000
++ /home/Mariusz.Pagowski/bin/ndate +6 2015083000
++ ident=2015083006
++ [[ 2015083006 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015083006
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015083006
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015083006 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015083006
++ /home/Mariusz.Pagowski/bin/ndate +6 2015083006
++ ident=2015083012
++ [[ 2015083012 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015083012
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015083012
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015083012 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015083012
++ /home/Mariusz.Pagowski/bin/ndate +6 2015083012
++ ident=2015083018
++ [[ 2015083018 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015083018
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015083018
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015083018 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015083018
++ /home/Mariusz.Pagowski/bin/ndate +6 2015083018
++ ident=2015083100
++ [[ 2015083100 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015083100
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015083100
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015083100 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015083100
++ /home/Mariusz.Pagowski/bin/ndate +6 2015083100
++ ident=2015083106
++ [[ 2015083106 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015083106
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015083106
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015083106 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015083106
++ /home/Mariusz.Pagowski/bin/ndate +6 2015083106
++ ident=2015083112
++ [[ 2015083112 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015083112
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015083112
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015083112 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015083112
++ /home/Mariusz.Pagowski/bin/ndate +6 2015083112
++ ident=2015083118
++ [[ 2015083118 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015083118
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015083118
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015083118 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015083118
++ /home/Mariusz.Pagowski/bin/ndate +6 2015083118
++ ident=2015090100
++ [[ 2015090100 -le 2015090100 ]]
++ infile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015090100
++ outfile=/scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015090100
++ ../src/sample_viirsaod_bufr.x /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat/VIIRS_AOD_BUFR:2015090100 AOT_BUFR_Table.txt 50 /scratch3/BMC/chem-var/pagowski/tmp/viirs_bufr_concat_sample/VIIRS_AOD_BUFR:2015090100
++ /home/Mariusz.Pagowski/bin/ndate +6 2015090100
++ ident=2015090106
++ [[ 2015090106 -le 2015090100 ]]

@@ -1,0 +1,3 @@
+grib2ctl.pl /home/Mariusz.Pagowski/MAPP_2018/src_grib/outdata/aod_2015081312.grib > aod_fv3.ctl
+
+gribmap -i aod_fv3.ctl

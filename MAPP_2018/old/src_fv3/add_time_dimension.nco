@@ -1,0 +1,20 @@
+defdim("time",1,0);
+time[$time] = 1.f;
+time@calendar = "none";
+
+erod_1[$time,$lat,$lon]=1.f;
+erod_1[$time,$lat,$lon]=EROD(0,0,:,:);
+erod_1@long_name = "erod_1";
+erod_1@units = "m2";
+
+erod_2[$time,$lat,$lon]=1.f;
+erod_2[$time,$lat,$lon]=EROD(0,1,:,:);
+erod_2@long_name = "erod_2";
+erod_2@units = "m2";
+
+erod_3[$time,$lat,$lon]=1.f;
+erod_3[$time,$lat,$lon]=EROD(0,2,:,:);
+erod_3@long_name = "erod_3";
+erod_3@units = "m2";
+
+

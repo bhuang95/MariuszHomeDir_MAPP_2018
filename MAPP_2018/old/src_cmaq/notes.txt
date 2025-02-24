@@ -1,0 +1,2 @@
+*EXT files copied from 
+/scratch3/NAGAPE/arl/Barry.Baker/cmaq502/CMAQv5.0.2/lib/ioapi_31/fixed_src

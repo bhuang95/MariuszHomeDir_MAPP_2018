@@ -1,0 +1,1 @@
+/scratch3/BMC/chem-var/pagowski/enkf_runs/wrf_run_gfs_all/wrf_pmsfc_test_212/2013_06_10_12/pmsfc_2013-06-10_12:00:00

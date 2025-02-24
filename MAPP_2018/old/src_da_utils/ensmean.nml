@@ -1,0 +1,5 @@
+&ensmean_nml
+varnames2d = ,
+varnames3d =  'bc1','bc2','oc1','oc2','p25','sulf','dust1','dust2','dust3','dust4','dust5','seas1','seas2','seas3','seas4',seas5,liq_wat,rainwat,ice_wat,snowwat,graupel,o3mr,so2,dms,msa,pp25,pp10,cld_amt,sphum
+/
+

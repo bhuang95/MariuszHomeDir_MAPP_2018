@@ -1,0 +1,10 @@
+'reinit'
+'set display color white'
+'c'
+
+'set gxout shaded'
+'open 1506000000024.ctl'
+'set lev 850'
+'d mag(ugrd850mb,vgrd850mb)'
+'d skip(ugrd850mb,10);vgrd850mb'
+'cbarn'

@@ -1,0 +1,94 @@
+time window:
+  begin: datemcf
+  length: PT6H
+geometry:
+  fms initialization:
+    namelist filename: Data/fv3files/fmsmpp.nml
+    field table filename: Data/fv3files/field_table_gfdl
+  akbk: Data/fv3files/akbk127.nc4
+  npx: 97
+  npy: 97
+  npz: 127
+  field metadata override: Data/fieldmetadata/ufs-aerosol.yaml
+state:
+  datetime: datecf
+  filetype: fms restart
+  datapath: Data/inputs/
+  filename_core: datefv3.fv_core.res.nc
+  filename_trcr: datefv3.fv_tracer.res.nc
+  filename_cplr: datefv3.coupler.res
+  state variables: [T,DELP,sphum,
+                    so4,bc1,bc2,oc1,oc2,
+                    dust1,dust2,dust3,dust4,dust5,
+                    seas1,seas2,seas3,seas4,seas5]
+observations:
+  observers:
+  - obs space:
+      name: Aod
+      obsdatain:
+        engine:
+          type: H5File
+          obsfile: Data/obs/aeronet_alm.datestd_v3.nc
+      obsdataout:
+        engine:
+          type: H5File
+          obsfile: Data/hofx/aeronet_alm_hofx.datestd.nc
+      simulated variables: [aerosolOpticalDepth]
+      channels: 3,5-7
+    obs operator:
+      name: AodLUTs
+      obs options:
+        Sensor_ID: aeronet
+        AerosolOption: aerosols_gocart_1
+        RCFile: geosaod_aeronet.rc
+        AbsorptionAod: true
+        model units coeff: 1.e-9
+    obs filters:
+    - filter: Temporal Thinning
+      seed_time: datecf
+      min_spacing: PT06H
+      category_variable:
+        name: MetaData/stationIdentification
+    - filter: Domain Check
+      where:
+      - variable:
+          name: MetaData/aod_l20_qc
+        is_in: 0
+      - variable:
+          name: MetaData/aaod_ssa_l20_qc_without_l20_aod440_0.4_threshold
+        is_in: 0
+
+  - obs space:
+      name: Aod
+      obsdatain:
+        engine:
+          type: H5File
+          obsfile: Data/obs/aeronet_alm.datestd_v3.nc
+      obsdataout:
+        engine:
+          type: H5File
+          obsfile: Data/hofx/aeronet_aod_hofx.datestd.nc 
+      simulated variables: [aerosolOpticalDepth]
+      channels: 3,5-7
+    obs operator:
+      name: AodLUTs
+      obs options:
+        Sensor_ID: aeronet
+        AerosolOption: aerosols_gocart_1
+        RCFile: geosaod_aeronet.rc
+        model units coeff: 1.e-9
+    obs filters:
+    - filter: Temporal Thinning
+      seed_time: datecf
+      min_spacing: PT06H
+      category_variable:
+        name: MetaData/stationIdentification
+    - filter: Domain Check
+      where:
+      - variable:
+          name: MetaData/aod_l20_qc
+        is_in: 0
+      - variable:
+          name: MetaData/aaod_ssa_l20_qc_without_l20_aod440_0.4_threshold
+        is_in: 0
+

@@ -1,0 +1,137 @@
+import sys,os
+sys.path.append('_BASE_/pyscripts/lib')
+#from subprocess import check_output as chkop
+import subprocess as sbps
+import numpy as np
+import matplotlib
+matplotlib.use('agg')
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+from matplotlib.dates import (DAILY, DateFormatter,
+                              rrulewrapper, RRuleLocator)
+from ndate import ndate
+from datetime import datetime
+from datetime import timedelta
+
+fsave=1
+
+sa_path="_SAPATH_"
+modelname="_MODELNAME_"
+obsname="_OBSNAME_"
+area="_AREAMSK_"
+obsvar="_OBSVAR_"
+linetype="_LINETYPE_"
+plev=(100, 250, 400, 500, 600, 700, 850, 925, 1000)
+#plev=(100, 150, 200, 250, 300, 400, 500, 600, 700, 800, 850, 900, 925, 950, 1000)
+
+sdate=_SDATE_
+edate=_EDATE_
+inc_h=_INC_H_
+
+cdate=sdate
+tmpfile="%s/%s/%s/%s_%s_%s.stat" %(sa_path,modelname,cdate,area,obsvar,linetype)
+f=open(tmpfile,'r')
+nlev=-1
+for line in f.readlines():
+    nlev=nlev+1
+f.close()
+
+dlist=[]
+ntime=0
+cdate=sdate
+while (cdate<edate):
+    filename="%s/%s/%s/%s_%s_%s.stat" %(sa_path,modelname,cdate,area,obsvar,linetype)
+    ntime=ntime+1
+    dlist.append(str(cdate))
+    cdate=ndate(cdate,inc_h)
+
+p_matched=np.zeros((ntime,nlev),dtype='int')
+fbar=np.zeros((ntime,nlev),dtype='float')
+obar=np.zeros_like(fbar)
+
+ntime=0
+cdate=sdate
+while (cdate<edate):
+    filename="%s/%s/%s/%s_%s_%s.stat" %(sa_path,modelname,cdate,area,obsvar,linetype)
+    f=open(filename,'r')
+    nlev=-1
+    for line in f.readlines():
+        if (nlev==-1):
+           nlev=nlev+1
+           continue
+        else:
+           p_matched[ntime,nlev]=int(line.split()[24])
+           fbar[ntime,nlev]=float(line.split()[25])
+           obar[ntime,nlev]=float(line.split()[26])
+           nlev=nlev+1
+    f.close()
+    cdate=ndate(cdate,inc_h)
+    ntime=ntime+1
+print('get data')
+#
+# Plot data
+#
+syy=int(str(sdate)[:4]); smm=int(str(sdate)[4:6])
+sdd=int(str(sdate)[6:8]); shh=int(str(sdate)[8:10])
+eyy=int(str(edate)[:4]); emm=int(str(edate)[4:6])
+edd=int(str(edate)[6:8]); ehh=int(str(edate)[8:10])
+
+date1 = datetime(syy,smm,sdd,shh)
+date2 = datetime(eyy,emm,edd,ehh)
+delta = timedelta(hours=inc_h)
+dates = mdates.drange(date1, date2, delta)
+
+rule = rrulewrapper(DAILY, byhour=6, interval=5)
+loc = RRuleLocator(rule)
+formatter = DateFormatter('%Y%h %n %d %Hz')
+
+print('get dates')
+
+leglist=[modelname,obsname]
+print(leglist)
+
+#sys.exit()
+#
+#  Timeseries
+#
+for nlv in np.arange(nlev):
+    pltdata=np.zeros((ntime,2),dtype='float')
+    pltdata[:,0]=fbar[:,nlv]
+    pltdata[:,1]=obar[:,nlv]
+
+    fig=plt.figure(figsize=(8,5))
+    ax=plt.subplot()
+    ax.set_prop_cycle(color=['red','blue'])
+    ax.plot_date(dates,pltdata,'o-')
+    ax.xaxis.set_major_locator(loc)
+    ax.xaxis.set_major_formatter(formatter)
+    ax.xaxis.set_tick_params(labelsize=10)
+    ax.legend(leglist)
+    ax.set_ylabel('Mixing Ratio [kg/kg]')
+    ax.grid()
+    ax.set_title('P%s %s %s' %(str(plev[nlv]),area,obsvar),loc='left',pad=15)
+
+    if (fsave):
+        fig.savefig('./Time_P%s_%s.%s_%s_%s.%s_%s.png' %(str(plev[nlv]),area,obsvar,modelname,obsname,sdate,cdate))
+
+#
+#  Vertical profile
+#
+pltdata=np.zeros((nlev,2),dtype='float')
+pltdata[:,0]=fbar.mean(axis=0)
+pltdata[:,1]=obar.mean(axis=0)
+
+fig=plt.figure(figsize=(5,8))
+ax=plt.subplot()
+ax.invert_yaxis()
+ax.set_prop_cycle(color=['red','blue'])
+ax.plot(pltdata,plev,'o-')
+ax.legend(leglist)
+ax.set_xlabel('Mixing Ratio [kg/kg]')
+ax.set_ylabel('Pressure[hPa]')
+ax.grid()
+ax.set_title('%s %s' %(area,obsvar),loc='left')
+
+if (fsave):
+    fig.savefig('./Prof_%s.%s_%s_%s.%s_%s.png' %(area,obsvar,modelname,obsname,sdate,cdate))
+

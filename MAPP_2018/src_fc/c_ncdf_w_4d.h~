@@ -1,0 +1,3 @@
+void c_ncdf_w ( );
+void c_ncdf_r_4d ( );
+void c_ncdf_w_4d ( );

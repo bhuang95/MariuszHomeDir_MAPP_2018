@@ -1,0 +1,58 @@
+FC = mpif90 -f90=ifort
+#FCFLAGSFREE =   -FR -traceback -O   -g -C
+FCFLAGSFREE =   -FR -O3 -traceback -O   -g -C
+FCFLAGSFIXED =   -g -C -Mfixed
+FCENDIAN = -convert big_endian
+LIBCDF = -L$(NETCDF)/lib -lnetcdf -lnetcdff 
+NWPROD = /scratch3/NCEPDEV/nwprod
+GSI = /scratch3/BMC/chem-var/pagowski/enkf_runs/gsi/src
+LIBNWPROD = -L$(NWPROD)/lib -lsp_4 -lsigio_4 -lbacio_4 #-lbufr_i4r8 -lw3_i4r8
+LIBMP = -lmpi -openmp -lpthread
+LIBMKL =  -mkl=sequential
+SLATEC = $(HOME)/util/lib
+LIBSLATEC = -L$(SLATEC) -lslatec
+CRTM=/scratch4/NCEPDEV/da/save/Michael.Lueken/nwprod/lib/crtm/2.2.3
+LIBCRTM   = -L$(CRTM) -lcrtm_v2.2.3
+SRCDIR=/scratch3/BMC/chem-var/pagowski/codes/src
+RM = /bin/rm -f
+
+.SUFFIXES:
+
+.SUFFIXES: .F .f90 .f .o
+
+.F.o: 
+	$(FC) -c $(FCFLAGSFREE) $*.F
+
+.f90.o: 
+	$(FC) -c $(FCFLAGSFREE) -I. -I$(GSI) -I$(NETCDF)/include -I$(CRTM)/incmod/crtm_v2.2.3 $*.f90
+
+.f.o: 
+	$(FC) -c $(FCFLAGSFIXED) $*.f
+
+OBJ101 = cal_gocart_aod_fv3_mpi.f90 genqsat.o stub_set_crtm_aerosol.o 
+MODULE101 = module_utils.o module_layers.o set_crtm_aerosolmod.o module_domain.o module_fv3_gocart.o crtm_interface.o fv3_module.o $(GSI)/kinds.o $(GSI)/constants.o 
+cal_gocart_aod_fv3_mpi.x: $(MODULE101) $(OBJ101)
+	$(FC) $(FCENDIAN) $(MODULE101) $(OBJ101) \
+	-I. -I$(GSI) -I$(NETCDF)/include -I$(CRTM)/incmod/crtm_v2.2.3 \
+	$(LIBCDF) $(LIBNWPROD) $(LIBCRTM) $(LIBMP)  -o $@
+
+OBJ102 = test.f90
+MODULE102 = kinds.o netcdf_io_generic.o
+test.x: $(MODULE102) $(OBJ102)	
+	$(FC) $(MODULE102) $(OBJ102) $(LIBCDF) -o $@
+
+
+cal_gocart_aod_fv3_mpi.o: cal_gocart_aod_fv3_mpi.f90 module_fv3_gocart.o module_utils.o module_domain.o crtm_interface.o genqsat.o stub_set_crtm_aerosol.o set_crtm_aerosolmod.o $(GSI)/kinds.o $(GSI)/constants.o 
+module_domain.o: module_domain.f90
+module_layers.o: module_layers.f90 module_domain.o $(GSI)/kinds.o $(GSI)/constants.o
+crtm_interface.o: crtm_interface.f90 module_fv3_gocart.o module_domain.o module_utils.o module_layers.o stub_set_crtm_aerosol.o set_crtm_aerosolmod.o $(GSI)/kinds.o $(GSI)/constants.o
+genqsat.o: $(GSI)/kinds.o $(GSI)/constants.o
+module_utils.o: $(GSI)/kinds.o
+set_crtm_aerosolmod.o: set_crtm_aerosolmod.f90
+stub_set_crtm_aerosol.o: module_utils.o $(GSI)/kinds.o $(GSI)/constants.o
+netcdf_io.o: netcdf_io.f90
+fv3_module.o: fv3_module.f90
+
+clean:
+	$(RM) *.o *.x *.stb *.mod
+

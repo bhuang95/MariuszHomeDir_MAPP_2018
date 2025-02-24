@@ -1,0 +1,5 @@
+defdim("nchannels",6);
+AOD[$time,$nchannels,$grid_yt,$grid_xt] = 0.0000000000001f;
+channels[$nchannels] = {440.f,470.f,500.f,550.f,660.f,870.f};
+AOD@long_name = "AOD multichannel" ;
+AOD@units = " " ;

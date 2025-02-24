@@ -1,0 +1,1 @@
+/scratch4/NCEPDEV/global/save/glopara/svn/fv3gfs/fix_fv3/C192/fv3_SCRIP_C192_GRIDSPEC_lon768_lat384.gaussian.bilinear.nc

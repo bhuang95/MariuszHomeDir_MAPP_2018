@@ -1,0 +1,38 @@
+FC =  pgf90
+FCFLAGSFREE =   -g -C -Mfree -O3 # -traceback -O 
+FCFLAGSFIXED =   -g -C -Mfixed
+FCENDIAN = -byteswapio
+LINKFLAGS =  -O3 
+LIB =  -L$(MKL) -lmkl -lmkl_lapack -lpthread
+LIBCDF = -L$(NETCDF)/lib -lnetcdf 
+INCLCDF = $(NETCDF)/include
+GSI = /scratch1/portfolios/BMC/chem-var/pagowski/enkf_runs/gsi_anowbufr
+LIBGSI = -L$(GSI)/lib -lbufr_i4r8 -lw3_i4r8
+#LIB =  -llapack -lblas
+
+INCL= .
+RM = /bin/rm -f
+
+.SUFFIXES:
+
+.SUFFIXES: .F .f90 .f .o
+
+.F.o: 
+	$(FC) -c $(FCFLAGSFREE)  $*.F
+
+.f90.o: 
+	$(FC) -c $(FCFLAGSFREE)  $*.f90
+
+.f.o: 
+	$(FC) -c $(FCFLAGSFIXED) $*.f
+
+
+OBJ101 = aodnnr2bufr.f90
+MODULE101 = 
+aodnnr2bufr.x: $(MODULE101) $(OBJ101)
+	$(FC) $(LINKFLAGS) $(MODULE101) $(OBJ101) \
+	-I$(INCLCDF) -o $@
+
+clean:
+	$(RM) *.o *.x *.stb *.mod
+

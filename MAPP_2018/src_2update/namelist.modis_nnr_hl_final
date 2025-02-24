@@ -1,0 +1,7 @@
+&record_inout
+ input_dir = "/scratch3/BMC/fim/MAPP_2018/OBS/NNR_003_6Targets/hl_DA_ENKF_0.000_0.059"
+ input_file = "nnr_fv3.ocean.covar_hl.201508.nc"
+ output_dir = "/scratch3/BMC/fim/MAPP_2018/OBS/NNR_003_6Targets/hl_DA_ENKF_0.000_0.059"
+ output_file = "nnr_fv3.ocean.covar_hl_final.201508.nc"
+ b_boar=0.15
+/

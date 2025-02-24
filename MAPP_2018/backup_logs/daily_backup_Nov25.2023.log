@@ -1,0 +1,66 @@
++ code=MAPP_2018_home
++ indir=/home/Mariusz.Pagowski/MAPP_2018
++ set -A exts '.?90' .f .F makefile Makefile .sh .ksh .csh .R .ncl .xml .rb .pro .py .yaml
++ cd /home/Mariusz.Pagowski/MAPP_2018
++ tarfile=Nov25.2023_MAPP_2018_home.tar
++ echo 'Tarring up .?90'
+Tarring up .?90
++ find . -mtime -7 -name '*.?90' -exec tar rvf Nov25.2023_MAPP_2018_home.tar '{}' ';'
++ 1> /dev/null
++ echo 'Tarring up .f'
+Tarring up .f
++ find . -mtime -7 -name '*.f' -exec tar rvf Nov25.2023_MAPP_2018_home.tar '{}' ';'
++ 1> /dev/null
++ echo 'Tarring up .F'
+Tarring up .F
++ find . -mtime -7 -name '*.F' -exec tar rvf Nov25.2023_MAPP_2018_home.tar '{}' ';'
++ 1> /dev/null
++ echo 'Tarring up makefile'
+Tarring up makefile
++ find . -mtime -7 -name '*makefile' -exec tar rvf Nov25.2023_MAPP_2018_home.tar '{}' ';'
++ 1> /dev/null
++ echo 'Tarring up Makefile'
+Tarring up Makefile
++ find . -mtime -7 -name '*Makefile' -exec tar rvf Nov25.2023_MAPP_2018_home.tar '{}' ';'
++ 1> /dev/null
++ echo 'Tarring up .sh'
+Tarring up .sh
++ find . -mtime -7 -name '*.sh' -exec tar rvf Nov25.2023_MAPP_2018_home.tar '{}' ';'
++ 1> /dev/null
++ echo 'Tarring up .ksh'
+Tarring up .ksh
++ find . -mtime -7 -name '*.ksh' -exec tar rvf Nov25.2023_MAPP_2018_home.tar '{}' ';'
++ 1> /dev/null
++ echo 'Tarring up .csh'
+Tarring up .csh
++ find . -mtime -7 -name '*.csh' -exec tar rvf Nov25.2023_MAPP_2018_home.tar '{}' ';'
++ 1> /dev/null
++ echo 'Tarring up .R'
+Tarring up .R
++ find . -mtime -7 -name '*.R' -exec tar rvf Nov25.2023_MAPP_2018_home.tar '{}' ';'
++ 1> /dev/null
++ echo 'Tarring up .ncl'
+Tarring up .ncl
++ find . -mtime -7 -name '*.ncl' -exec tar rvf Nov25.2023_MAPP_2018_home.tar '{}' ';'
++ 1> /dev/null
++ echo 'Tarring up .xml'
+Tarring up .xml
++ find . -mtime -7 -name '*.xml' -exec tar rvf Nov25.2023_MAPP_2018_home.tar '{}' ';'
++ 1> /dev/null
++ echo 'Tarring up .rb'
+Tarring up .rb
++ find . -mtime -7 -name '*.rb' -exec tar rvf Nov25.2023_MAPP_2018_home.tar '{}' ';'
++ 1> /dev/null
++ echo 'Tarring up .pro'
+Tarring up .pro
++ find . -mtime -7 -name '*.pro' -exec tar rvf Nov25.2023_MAPP_2018_home.tar '{}' ';'
++ 1> /dev/null
++ echo 'Tarring up .py'
+Tarring up .py
++ find . -mtime -7 -name '*.py' -exec tar rvf Nov25.2023_MAPP_2018_home.tar '{}' ';'
++ 1> /dev/null
++ echo 'Tarring up .yaml'
+Tarring up .yaml
++ find . -mtime -7 -name '*.yaml' -exec tar rvf Nov25.2023_MAPP_2018_home.tar '{}' ';'
++ 1> /dev/null
++ [ -r Nov25.2023_MAPP_2018_home.tar ]

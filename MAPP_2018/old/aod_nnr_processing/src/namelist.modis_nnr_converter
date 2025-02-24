@@ -1,0 +1,12 @@
+&record1
+ input_dir = "/scratch3/BMC/chem-var/pagowski/aod_nnr_processing/indata/MYD04/Y2015/M09"
+ input_file = "nnr_003.MYD04_L2a.deep.20150901_0000z.ods"
+ output_dir = "/scratch3/BMC/chem-var/pagowski/aod_nnr_processing/outdata/MYD04"
+ output_file = "nnr_003.MYD04_L2a.deep.20150901_0000z.bufr"
+ select_domain = .false.
+ lat_ll = -90.0
+ lat_ur = 90.0
+ lon_ll = -180.0
+ lon_ur = 180.0
+
+/

@@ -1,0 +1,32 @@
+#/bin/ksh
+
+INCLUDES =  \
+           -I../level1b_readers \
+           -I../include \
+           -I../hdfutils \
+           -I../utils \
+           -I/airs/Software/bufrlib  \
+           -I$(HDFINC) -I.
+
+LIBS = \
+       -L../hdfutils -lhdfutils \
+       -L../utils -lfutil \
+       -L../level1b_readers -lmodis1breaders \
+       -L../include -lmodules \
+       -L/airs/Software/bufrlib -bufr 
+
+FSRCS =
+FOBJS =
+F90OBJS = \
+          aod_to_bufr.o 
+
+all:	$(F90OBJS) libmodisrdwr.a
+
+libmodisrdwr.a:	$(F90OBJS) $(FOBJS)
+		ar crv libmodisrdwr.a $?
+
+#include the suffixes
+
+#include ${HOME}/work/config/rules.make
+include $(MKRULE)/rules.make
+#include ../config/rules.make

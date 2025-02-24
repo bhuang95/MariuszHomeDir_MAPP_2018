@@ -1,0 +1,12 @@
+calc_corrlength.f90 from 
+/scratch3/BMC/wrfruc/mhu/code/EMC/gsi/trunk_80367/util/EnKF/gfs/src/misc
+
+also EMC code in 
+/scratch3/BMC/chem-var/pagowski/enkf_runs/trunk_r79009/util/NMC_Bkerror/sorc
+
+also
+/scratch3/BMC/gsienkf/Philip.Pegion
+/scratch3/BMC/gsienkf/whitaker
+/scratch3/BMC/gsienkf/whitaker/scripts/4densvar_t254t254_4diau
+run_gsi_4densvar.sh
+/scratch3/BMC/gsienkf/whitaker/scripts/master

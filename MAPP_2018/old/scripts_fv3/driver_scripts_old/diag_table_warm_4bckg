@@ -1,0 +1,32 @@
+FV3 Ensemble Member 001 Forecast
+YYYY MM DD HH 0 0
+"fv3_history" 21600 "seconds" 1 "seconds" "time"
+"dynamics" "delz"     "delz"    "fv3_history" "all" .false. "none" 2
+"dynamics" "pfnh"     "pres"    "fv3_history" "all" .false. "none" 2
+"dynamics" "ucomp"    "ucomp"   "fv3_history" "all" .false. "none" 2
+"dynamics" "vcomp"    "vcomp"   "fv3_history" "all" .false. "none" 2
+"dynamics" "sphum"    "sphum"   "fv3_history" "all" .false. "none" 2
+"dynamics" "temp"     "temp"    "fv3_history" "all" .false. "none" 2
+"dynamics" "delp"     "delp"    "fv3_history" "all" .false. "none" 2
+"dynamics" "liq_wat"  "liq_wat" "fv3_history" "all" .false. "none" 2
+"dynamics" "o3mr"     "o3mr"    "fv3_history" "all" .false. "none" 2
+"dynamics" "sulf"     "sulf"    "fv3_history" "all" .false. "none" 2
+"dynamics" "bc1"      "bc1"     "fv3_history" "all" .false. "none" 2
+"dynamics" "bc2"      "bc2"     "fv3_history" "all" .false. "none" 2
+"dynamics" "oc1"      "oc1"     "fv3_history" "all" .false. "none" 2
+"dynamics" "oc2"      "oc2"     "fv3_history" "all" .false. "none" 2
+"dynamics" "p25"      "p25"     "fv3_history" "all" .false. "none" 2
+"dynamics" "dust1"    "dust1"   "fv3_history" "all" .false. "none" 2
+"dynamics" "dust2"    "dust2"   "fv3_history" "all" .false. "none" 2
+"dynamics" "dust3"    "dust3"   "fv3_history" "all" .false. "none" 2
+"dynamics" "dust4"    "dust4"   "fv3_history" "all" .false. "none" 2
+"dynamics" "dust5"    "dust5"   "fv3_history" "all" .false. "none" 2
+"dynamics" "seas1"    "seas1"   "fv3_history" "all" .false. "none" 2
+"dynamics" "seas2"    "seas2"   "fv3_history" "all" .false. "none" 2
+"dynamics" "seas3"    "seas3"   "fv3_history" "all" .false. "none" 2
+"dynamics" "seas4"    "seas4"   "fv3_history" "all" .false. "none" 2
+"dynamics" "pk"       "pk"      "fv3_history" "all" .false. "none" 2
+"dynamics" "bk"       "bk"      "fv3_history" "all" .false. "none" 2
+"dynamics" "zsurf"    "orog"    "fv3_history" "all" .false. "none" 2
+"dynamics" "ps"       "psfc"    "fv3_history" "all" .false. "none" 2
+

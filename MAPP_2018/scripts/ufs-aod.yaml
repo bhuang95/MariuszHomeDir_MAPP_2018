@@ -1,0 +1,5 @@
+field metadata:
+
+- long name: aerosolOpticalDepth
+  io name: aod
+  io file: surface

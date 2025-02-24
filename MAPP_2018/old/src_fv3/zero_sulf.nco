@@ -1,0 +1,3 @@
+ea_sulf[$time,$lat,$lon]=0.f;
+ea_sulf@long_name = "emiss_anthro_sulf";
+ea_sulf@units = "ppmv kg m-2 s-1";

@@ -1,0 +1,17 @@
+FC =  ifort
+
+INCL= .
+RM = /bin/rm -f
+
+.SUFFIXES:
+
+.SUFFIXES: .F .f90 .f .o
+
+.f90.o: 
+	$(FC) -c $(FCFLAGSFREE) $(LIBCDF) $*.f90
+
+MODULE = tension_module.o 
+test_tspack.x: $(MODULE) $(OBJ)
+	$(FC) $(LINKFLAGS) -I$(INCL) $(MODULE) $(OBJ) \
+	 -o $@
+

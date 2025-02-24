@@ -1,0 +1,8 @@
+AOD[$Time,$south_north,$west_east]=0.0000000000001f;
+
+AOD@FieldType = 104;
+AOD@MemoryOrder = "XY ";
+AOD@description = "AOD at 550nm" ;
+AOD@units = " " ;
+AOD@stagger = " " ;
+AOD@coordinates = "XLONG XLAT" ;

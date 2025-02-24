@@ -1,0 +1,7 @@
+dust_total=dust1+dust2+dust3+dust4+dust5;
+seas_total=seas1+seas2+seas3+seas4+seas5;
+//seas_total=seas1+seas2+seas3+seas4;
+carbon_total=bc1+bc2+oc1+oc2;
+
+
+ 

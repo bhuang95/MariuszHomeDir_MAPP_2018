@@ -1,0 +1,88 @@
+# added by fre: sphum must be present in atmos
+# specific humidity for moist runs
+ "TRACER", "atmos_mod", "sphum"
+           "longname",     "specific humidity"
+           "units",        "kg/kg"
+       "profile_type", "fixed", "surface_value=3.e-6" /
+# prognostic cloud water mixing ratio
+ "TRACER", "atmos_mod", "liq_wat"
+           "longname",     "cloud water mixing ratio"
+           "units",        "kg/kg"
+       "profile_type", "fixed", "surface_value=1.e30" /
+# prognostic ozone mixing ratio tracer
+ "TRACER", "atmos_mod", "o3mr"
+           "longname",     "ozone mixing ratio"
+           "units",        "kg/kg"
+       "profile_type", "fixed", "surface_value=1.e30" /
+ "TRACER", "atmos_mod", "msa"
+           "longname",     "msa"
+           "units",        "ppmv"
+       "profile_type", "fixed", "surface_value=1.e30" /
+ "TRACER", "atmos_mod", "so2"
+           "longname",     "so2"
+           "units",        "ppmv"
+       "profile_type", "fixed", "surface_value=1.e30" /
+ "TRACER", "atmos_mod", "dms"
+           "longname",     "dms"
+           "units",        "ppmv"
+       "profile_type", "fixed", "surface_value=1.e30" /
+ "TRACER", "atmos_mod", "sulf"
+           "longname",     "sulf"
+           "units",        "ppmv"
+       "profile_type", "fixed", "surface_value=1.e30" /
+ "TRACER", "atmos_mod", "bc1"
+           "longname",     "bc1"
+           "units",        "ug/kg-dryair"
+       "profile_type", "fixed", "surface_value=1.e30" /
+ "TRACER", "atmos_mod", "bc2"
+           "longname",     "bc2"
+           "units",        "ug/kg-dryair"
+       "profile_type", "fixed", "surface_value=1.e30" /
+ "TRACER", "atmos_mod", "oc1"
+           "longname",     "oc1"
+           "units",        "ug/kg-dryair"
+       "profile_type", "fixed", "surface_value=1.e30" /
+ "TRACER", "atmos_mod", "oc2"
+           "longname",     "oc2"
+           "units",        "ug/kg-dryair"
+       "profile_type", "fixed", "surface_value=1.e30" /
+ "TRACER", "atmos_mod", "p25"
+           "longname",     "p25"
+           "units",        "ug/kg-dryair"
+       "profile_type", "fixed", "surface_value=1.e30" /
+ "TRACER", "atmos_mod", "dust_1"
+           "longname",     "dust_1"
+           "units",        "ug/kg-dryair"
+       "profile_type", "fixed", "surface_value=1.e30" /
+ "TRACER", "atmos_mod", "dust_2"
+           "longname",     "dust_2"
+           "units",        "ug/kg-dryair"
+       "profile_type", "fixed", "surface_value=1.e30" /
+ "TRACER", "atmos_mod", "dust_3"
+           "longname",     "dust_3"
+           "units",        "ug/kg-dryair"
+       "profile_type", "fixed", "surface_value=1.e30" /
+ "TRACER", "atmos_mod", "dust_4"
+           "longname",     "dust_4"
+           "units",        "ug/kg-dryair"
+       "profile_type", "fixed", "surface_value=1.e30" /
+ "TRACER", "atmos_mod", "dust_5"
+           "longname",     "dust_5"
+           "units",        "ug/kg-dryair"
+       "profile_type", "fixed", "surface_value=1.e30" /
+ "TRACER", "atmos_mod", "seas_1"
+           "longname",     "seas_1"
+           "units",        "ug/kg-dryair"
+       "profile_type", "fixed", "surface_value=1.e30" /
+ "TRACER", "atmos_mod", "seas_2"
+           "longname",     "seas_2"
+           "units",        "ug/kg-dryair"
+       "profile_type", "fixed", "surface_value=1.e30" /
+ "TRACER", "atmos_mod", "seas_3"
+           "longname",     "seas_3"
+           "units",        "ug/kg-dryair"
+       "profile_type", "fixed", "surface_value=1.e30" /
+ "TRACER", "atmos_mod", "seas_4"
+           "longname",     "seas_4"
+           "units",        "ug/kg-dryair"
+       "profile_type", "fixed", "surface_value=1.e30" /

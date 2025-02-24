@@ -1,0 +1,42 @@
+FC =  ifort
+FCFLAGSFREE =   -FR -O3 # -traceback -O   -g -C
+FCFLAGSFIXED =   -g -C -Mfixed
+FCENDIAN = -convert big_endian
+OMPFLAG  = -openmp -lpthread
+LIBCDF = -I$(NETCDF)/include -L$(NETCDF)/lib -lnetcdf -lnetcdff
+GSI = /scratch3/BMC/chem-var/pagowski/enkf_runs/gsi/src
+LIBNWPROD = -L$(NWPROD)/lib -lsp_4 -lsigio_4 -lbacio_4 #-lbufr_i4r8 -lw3_i4r8
+LIBMP = -openmp -lpthread
+#LIBMP = -lmpi -openmp -lpthread
+CRTM=/scratch4/NCEPDEV/da/save/Michael.Lueken/nwprod/lib/crtm/2.2.3
+LIBCRTM   = -L$(CRTM) -lcrtm_v2.2.3
+WRFPATH = /scratch3/NCEPDEV/nceplibs/ext/WRF/3.7/WRFV3
+LIBwrf          = -L$(WRFPATH)/main -lwrflib
+LIBwrfio_int    = -L$(WRFPATH)/external/io_int -lwrfio_int
+LIBwrfio_netcdf = -L$(WRFPATH)/external/io_netcdf -lwrfio_nf
+LIBWRF = $(LIBwrf) $(LIBwrfio_int) $(LIBwrfio_netcdf)
+
+INCL= .
+RM = /bin/rm -f
+
+.SUFFIXES:
+
+.SUFFIXES: .F .f90 .o
+
+.F.o: 
+	$(FC) -c $(FCFLAGSFREE)  $*.F
+
+.f90.o: 
+	$(FC) -c $(FCFLAGSFREE) $(LIBCDF) $*.f90
+
+
+
+OBJ101 = cal_gocart_aod.f90 
+MODULE101 = 
+cal_gocart_aod.x: $(MODULE101) $(OBJ101)
+	$(FC) $(OMPFLAG) $(FCENDIAN) -I. $(MODULE101) $(OBJ101) \
+	$(LIBMP) -o $@
+
+clean:
+	$(RM) *.o *.x *.stb *.mod
+

@@ -1,0 +1,26 @@
+calc_corrlength.f90 from
+/scratch3/BMC/wrfruc/mhu/code/EMC/gsi/trunk_80367/util/EnKF/gfs/src/misc
+
+also EMC code in
+/scratch3/BMC/chem-var/pagowski/enkf_runs/trunk_r79009/util/NMC_Bkerror/sorc
+
+also
+/scratch3/BMC/gsienkf/Philip.Pegion
+/scratch3/BMC/gsienkf/whitaker
+/scratch3/BMC/gsienkf/whitaker/scripts/4densvar_t254t254_4diau
+run_gsi_4densvar.sh
+/scratch3/BMC/gsienkf/whitaker/scripts/master
+
+/scratch3/NCEPDEV/nwprod/lib/sorc/sigio_v2.0.1/libsrc/sigio_r_module.f
+
+libraries incl libshtns.a from
+$scr3/gsienkf/whitaker/contrib/pythonextras/Anaconda-1.8.0/lib
+
+
+program convert2gcv.f copied from
+$scr3/chem-var/pagowski/enkf_runs/gsi/util/NMC_Bkerror/util/convert2gcv.f
+converts bckg error files to endian whatever
+- used to add aerosol species
+
+nemsio library source in
+/scratch4/NCEPDEV/global/save/glopara/svn/nceplibs/branches/nemsiogfsv2.0.1/src

@@ -1,0 +1,12 @@
+&record1
+ input_dir = ${indir}
+ input_file = ${infile}
+ output_dir = ${outdir}
+ output_file = ${outfile} 
+ select_domain = .true.
+ lat_ll = 10.0
+ lat_ur = 60.0
+ lon_ll = -150.0
+ lon_ur = -50.0
+/
+

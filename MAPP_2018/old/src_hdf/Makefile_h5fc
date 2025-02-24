@@ -1,0 +1,42 @@
+FC = h5fc
+FCFLAGSFREE = -O2 -free -C
+FCFLAGSFIXED = -O2 -fixed -C
+LINKFLAGS = 
+INCL = .
+RM = /bin/rm -f
+BIG_ENDIAN = convert big_endian
+GSI = /scratch3/BMC/chem-var/pagowski/enkf_runs/gsichem_r1559_1567
+LIBGSI = -L$(GSI)/lib -lbufr_i4r8 -lw3emc_i4r8 -lw3nco_i4r8
+
+.SUFFIXES:
+.SUFFIXES: .f90 .f .o
+
+.f90.o: 
+	$(FC) -c $(FCFLAGSFREE) -I$(INCL) $*.f90	
+.f.o: 
+	$(FC) -c $(FCFLAGSFIXED) -I$(INCL) $*.f	
+
+OBJ1 =  hdf2bufr.o
+MODULE1 = 
+
+hdf2bufr.x: $(MODULE1) $(OBJ1) 
+	$(FC) $(LINKFLAGS) -I$(INCL) $(MODULE1) $(OBJ1)   \
+	$(LIBGSI) -o $@ 
+
+OBJ2 =  hdf2bufr_fv3.o
+MODULE2 = 
+
+hdf2bufr_fv3.x: $(MODULE2) $(OBJ2) 
+	$(FC) $(LINKFLAGS) -I$(INCL) $(MODULE2) $(OBJ2)   \
+	$(LIBGSI) -o $@ 
+
+
+clean:
+	$(RM) *.o *.x *.mod 
+
+
+
+
+
+
+

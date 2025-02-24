@@ -1,0 +1,88 @@
+&SETUP
+    miter=2,niter(1)=50,niter(2)=50,niter_no_qc(1)=50,niter_no_qc(2)=0,write_diag(1)=.true.,write_diag(2)=.false.,write_diag(3)=.true.,
+    qoption=2,
+    gencode=82,factqmin=5.0,factqmax=0.005,deltim=1200,
+    iguess=-1,
+    oneobtest=.false.,retrieval=.false.,
+    use_pbl=.false.,use_compress=.true.,nsig_ext=12,gpstop=50.,
+    use_gfs_nemsio=.false.,lrun_subdirs=.true.,
+    newpc4pred=.true.,adp_anglebc=.true.,angord=4,passive_bc=.true.,use_edges=.false.,
+    diag_precon=.true.,step_start=1.e-3,emiss_bc=.true.,
+    crtm_coeffs_path="./crtm_coeffs/Big_Endian/",
+    cwoption=3,thin4d=.true.,
+    
+/
+&GRIDOPTS
+    JCAP_B=24,JCAP=24,NLAT=28,NLON=52,nsig=64,
+    regional=.false.,nlayers(63)=3,nlayers(64)=6,
+    
+/
+&BKGERR
+    vs=0.7,
+    hzscl=1.7,0.8,0.5,
+    hswgt=0.45,0.3,0.25,
+    bw=0.0,norsp=4,
+    bkgv_flowdep=.true.,bkgv_rewgtfct=1.5,
+    bkgv_write=.false.,
+    cwcoveqqcov=.false.,
+    
+/
+&ANBKGERR
+    anisotropic=.false.,
+    
+/
+&JCOPTS
+    ljcdfi=.false.,alphajc=0.0,ljcpdry=.true.,bamp_jcpdry=5.0e7,
+    
+/
+&STRONGOPTS
+    tlnmc_option=2,nstrong=1,nvmodes_keep=8,period_max=6.,period_width=1.5,
+    
+/
+&OBSQC
+    dfact=0.75,dfact1=3.0,noiqc=.true.,oberrflg=.false.,c_varqc=0.02,
+    use_poq7=.true.,qc_noirjaco3_pole=.true.,vqc=.true.,
+    aircraft_t_bc=.true.,biaspredt=1000.0,upd_aircraft=.true.,
+    
+/
+&OBS_INPUT
+    dmesh(1)=145.0,dmesh(2)=150.0,dmesh(3)=100.0,time_window_max=3.0,
+    
+/
+
+OBS_INPUT::
+!  dfile          dtype       dplat       dsis                dval    dthin dsfcalc
+   rapidscatbufr  uv          null        uv                  0.0     0     0
+::
+
+&SUPEROB_RADAR
+    
+/
+&LAG_DATA
+    
+/
+&HYBRID_ENSEMBLE
+    l_hyb_ens=.false.
+    beta_s0=0.125,
+    s_ens_h=800.,
+    s_ens_v=-0.8,
+    generate_ens=.false.,
+    uv_hyb_ens=.true.,
+    aniso_a_en=.false.,
+    readin_localization=.true.,
+    oz_univ_static=.false.,
+    ensemble_path='./ensemble_data/',
+/
+&RAPIDREFRESH_CLDSURF
+    dfi_radar_latent_heat_time_period=30.0,
+/
+&CHEM
+/
+&SINGLEOB_TEST
+    maginnov=1.0,magoberr=0.8,oneob_type='t',
+    oblat=45.,oblon=180.,obpres=500.,obdattim=2016030406,
+    obhourset=0.,
+    
+/
+&NST
+/

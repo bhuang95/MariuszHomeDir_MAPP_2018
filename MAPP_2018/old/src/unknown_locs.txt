@@ -1,0 +1,95 @@
+
+000070301|PM10|0301|Flin Flon|Active|CN3|Manitoba Conservation Air Quality\
+ Section|CA|54.765000|-101.875300|0.000|-6.00|CA|||||00|CC|00007|MANITOBA|\
+
+
+000102401|O3|2401|Smithers St Josephs|Active|BC1|British Columbia Ministry\
+ of Environment|CA|54.783100|-127.177500|481.300|-8.00|CA|||||00|CC|00010|\
+BRITISH COLUMBIA||
+
+000102501|PM10|2501|Terrace BC Access Centre|Active|BC1|British Columbia M\
+inistry of Environment|CA|54.518300|-128.597500|510.300|-8.00|CA|||||00|CC\
+|00010|BRITISH COLUMBIA||
+
+
+000100202|O3|0202|PRG Plaza 400|Active|BC1|British Columbia Ministry of En\
+vironment|CA|53.914700|-122.741900|601.500|-8.00|CA|||||00|CC|00010|BRITIS\
+H COLUMBIA||
+
+000100203|PM10|0203|PRG BC Rail Warehouse|Active|BC1|British Columbia Mini\
+stry of Environment|CA|53.871100|-122.743600|590.500|-8.00|CA|||||00|CC|00\
+010|BRITISH COLUMBIA||
+
+000100205|PM10|0205|PRG Gladstone School|Active|BC1|British Columbia Minis\
+try of Environment|CA|53.858300|-122.760800|583.500|-8.00|CA|||||00|CC|000\
+10|BRITISH COLUMBIA||
+
+000101702|PM10|1702|Quesnel Maple Drive|Active|BC1|British Columbia Minist\
+ry of Environment|CA|52.963100|-122.450600|456.300|-8.00|CA|||||00|CC|0001\
+0|BRITISH COLUMBIA||
+
+000101704|PM10|1704|Quesnel West Correlieu School|Active|BC1|British Colum\
+bia Ministry of Environment|CA|52.966400|-122.516700|0.000|-8.00|CA|||||00\
+|CC|00010|BRITISH COLUMBIA||
+
+000102103|PM10|2103|Harmac Cedar Woodbank|Active|BC1|British Columbia Mini\
+stry of Environment|CA|49.121700|-123.860000|47.000|-8.00|CA|||||00|CC|000\
+10|BRITISH COLUMBIA||
+
+000102302|PM10|2302|Powell River Wildwood|Active|BC1|British Columbia Mini\
+stry of Environment|CA|49.887500|-124.558300|0.000|-8.00|CA|||||00|CC|0001\
+0|BRITISH COLUMBIA||
+
+000103901|PM10|3901|Kitimat Riverlodge|Active|BC1|British Columbia Ministr\
+y of Environment|CA|54.055800|-128.673900|0.000|-8.00|CA|||||00|CC|00010|B\
+RITISH COLUMBIA||
+
+000105101|PM10|5101|Houston Firehall|Active|BC1|British Columbia Ministry \
+of Environment|CA|54.397200|-126.645000|594.400|-8.00|CA|||||00|CC|00010|B\
+RITISH COLUMBIA||
+
+000102701|O3|2701|Williams Lake Columneetza School|Active|BC1|British Colu\
+mbia Ministry of Environment|CA|52.134200|-122.152800|660.300|-8.00|CA||||\
+|00|CC|00010|BRITISH COLUMBIA||
+
+000102706|PM10|2706|Williams Lake CRD School|Active|BC1|British Columbia M\
+inistry of Environment|CA|52.130800|-122.142200|661.500|-8.00|CA|||||00|CC\
+|00010|BRITISH COLUMBIA||
+
+000103202|PM10|3202|Golden Hospital|Active|BC1|British Columbia Ministry o\
+f Environment|CA|51.295800|-116.971700|773.500|-8.00|CA|||||00|CC|00010|BR\
+ITISH COLUMBIA||
+
+000103901|PM10|3901|Kitimat Riverlodge|Active|BC1|British Columbia Ministr\
+y of Environment|CA|54.055800|-128.673900|0.000|-8.00|CA|||||00|CC|00010|B\
+RITISH COLUMBIA||
+
+000105101|PM10|5101|Houston Firehall|Active|BC1|British Columbia Ministry \
+of Environment|CA|54.397200|-126.645000|594.400|-8.00|CA|||||00|CC|00010|B\
+RITISH COLUMBIA||
+
+000105201|PM10|5201|Burns Lake Fire Centre|Active|BC1|British Columbia Min\
+istry of Environment|CA|54.230800|-125.764400|652.400|-8.00|CA|||||00|CC|0\
+0010|BRITISH COLUMBIA||
+
+000105301|PM10|5301|Langdale Elementary|Active|BC1|British Columbia Minist\
+ry of Environment|CA|49.441700|-123.491700|70.200|-8.00|CA|||||00|CC|00010\
+|BRITISH COLUMBIA||
+
+000105501|PM10|5501|Fort St John NP Cultural Centre|Active|BC1|British Col\
+umbia Ministry of Environment|CA|56.245800|-120.848900|695.400|-8.00|CA|||\
+||00|CC|00010|BRITISH COLUMBIA||
+
+60450010|PM10|0010|Fort Bragg High School|Active|MEN|Mendocino County AQM\
+D|R9|39.437340|-123.787660|48.500|-8.00|US|||||06|CA|06045|MENDOCINO||
+
+401359021|O3|9021|ROLAND|Active|CK1|Cherokee Nation|R6|35.408138|-94.52441\
+4|136.600|-6.00|US|||22900| Fort Smith, AR-OK |40|OK|40135|SEQUOYAH||
+
+560050800|O3|0800|Gillette College|Active|WY1|Wyoming Department of Enviro\
+nmental Quality|R8|44.263901|-105.506104|1388.400|-7.00|US|||||56|WY|56005\
+|CAMPBELL||
+
+560370300|O3|0300|MOXA|Active|WY1|Wyoming Department of Environmental Qual\
+ity|R8|41.750599|-109.789703|1967.300|-7.00|US|||||56|WY|56037|SWEETWATER|\
+|

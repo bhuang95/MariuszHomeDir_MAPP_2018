@@ -1,0 +1,152 @@
+Start Prologue v3.2-ad-2016.04.05 Tue Oct 11 18:04:03 UTC 2016 on Mother Superior(head node): t0764
+Node Access Status = SINGLEJOB
+Job 15429897.bqs3 started for user Mariusz.Pagowski in queue debug
+======= Running Sanity Checks =======
+----------------
+t[0545,0686,0720,0764]
+----------------
+PASS!
+=======  Ended Sanity Checks  =======
+End Prologue v3.1-ad-2016.04.05 Tue Oct 11 18:04:05 UTC 2016 
+_______________________________________________________________
+
+Welcome to Theia
+  This system is Cray CS400 Linux Cluster
+
+Update History:
+
+  Version: v3.3-ad-2016.04.08
+    -- Added cach clearing before streams check
+       to eliminate potential false positives
+
+  Version: v3.2-ad-2016.04.05
+    -- Implemented parallel version of stream
+
+  Version: v3.1-ad-2016.03.01
+    -- Added streams check in epilogue
+    -- Removed Zeus/lustre specific code
+
+type:
+  module avail
+  for various Available Modules
+
+_______________________________________________________
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+MODULE LIST
+
+Currently Loaded Modules:
+  1) intel/14.0.2    3) netcdf/4.3.0     5) nco/4.4.5
+  2) mvapich2/2.1a   4) udunits/2.1.24
+
+ sfg_2012081400_fhr06_mem075
+ sfg_2012081400_fhr06_mem080
+ sfg_2012081400_fhr06_mem077
+ sfg_2012081400_fhr06_mem079
+ sfg_2012081400_fhr06_mem076
+ sfg_2012081400_fhr06_mem073
+ sfg_2012081400_fhr06_mem078
+ sfg_2012081400_fhr06_mem008
+ sfg_2012081400_fhr06_mem003
+ sfg_2012081400_fhr06_mem018
+ sfg_2012081400_fhr06_mem014
+ sfg_2012081400_fhr06_mem016
+ sfg_2012081400_fhr06_mem024
+ sfg_2012081400_fhr06_mem010
+ sfg_2012081400_fhr06_mem074
+ sfg_2012081400_fhr06_mem005
+ sfg_2012081400_fhr06_mem002
+ sfg_2012081400_fhr06_mem022
+ sfg_2012081400_fhr06_mem017
+ sfg_2012081400_fhr06_mem050
+ sfg_2012081400_fhr06_mem055
+ sfg_2012081400_fhr06_mem060
+ sfg_2012081400_fhr06_mem049
+ sfg_2012081400_fhr06_mem063
+ sfg_2012081400_fhr06_mem051
+ sfg_2012081400_fhr06_mem070
+ sfg_2012081400_fhr06_mem009
+ sfg_2012081400_fhr06_mem052
+ sfg_2012081400_fhr06_mem007
+ sfg_2012081400_fhr06_mem065
+ sfg_2012081400_fhr06_mem059
+ sfg_2012081400_fhr06_mem019
+ sfg_2012081400_fhr06_mem037
+ sfg_2012081400_fhr06_mem026
+ sfg_2012081400_fhr06_mem040
+ sfg_2012081400_fhr06_mem036
+ sfg_2012081400_fhr06_mem058
+ sfg_2012081400_fhr06_mem023
+ sfg_2012081400_fhr06_mem042
+ sfg_2012081400_fhr06_mem067
+ sfg_2012081400_fhr06_mem045
+ sfg_2012081400_fhr06_mem056
+ sfg_2012081400_fhr06_mem057
+ sfg_2012081400_fhr06_mem025
+ sfg_2012081400_fhr06_mem064
+ sfg_2012081400_fhr06_mem046
+ sfg_2012081400_fhr06_mem030
+ sfg_2012081400_fhr06_mem061
+ sfg_2012081400_fhr06_mem039
+ sfg_2012081400_fhr06_mem054
+ sfg_2012081400_fhr06_mem011
+ sfg_2012081400_fhr06_mem029
+ sfg_2012081400_fhr06_mem004
+ sfg_2012081400_fhr06_mem041
+ sfg_2012081400_fhr06_mem071
+ sfg_2012081400_fhr06_mem015
+ sfg_2012081400_fhr06_mem047
+ sfg_2012081400_fhr06_mem072
+ sfg_2012081400_fhr06_mem027
+ sfg_2012081400_fhr06_mem001                                                    
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                           
+ nlons,nlats,nlevs,ntrunc,ntrac=         768         384          64         254
+           3
+ sfg_2012081400_fhr06_mem001
+ sfg_2012081400_fhr06_mem020
+ sfg_2012081400_fhr06_mem038
+ sfg_2012081400_fhr06_mem069
+ sfg_2012081400_fhr06_mem032
+ sfg_2012081400_fhr06_mem033
+ sfg_2012081400_fhr06_mem031
+ sfg_2012081400_fhr06_mem035
+ sfg_2012081400_fhr06_mem053
+ sfg_2012081400_fhr06_mem048
+ sfg_2012081400_fhr06_mem028
+ sfg_2012081400_fhr06_mem034
+ sfg_2012081400_fhr06_mem043
+ sfg_2012081400_fhr06_mem066
+ sfg_2012081400_fhr06_mem044
+ sfg_2012081400_fhr06_mem062
+ sfg_2012081400_fhr06_mem068
+ sfg_2012081400_fhr06_mem006
+ sfg_2012081400_fhr06_mem012
+ sfg_2012081400_fhr06_mem021
+ sfg_2012081400_fhr06_mem013
+ all done!
+_______________________________________________________________
+Start Epilogue v3.4-ad-2016.08.08 Tue Oct 11 18:07:35 UTC 2016 
+=====================================
+Peak memory usage summary:
+  min =   21503852  KB
+  ave =   52318414  KB
+  max =   62609492  KB
+
+All nodes sorted by nodelist order: (memory usage in KB)
+          % of      user        user          user         total       total
+Node      limit     max         limit        current      current      phys
+t0764     98.3    62609492     63711232         5008      2468380     65990624 
+t0686     98.2    62585916     63711232         5792      2452080     65990624 
+t0720     98.2    62574396     63711232         3952      2514848     65990624 
+t0545     33.8    21503852     63711232         5984      2528568     65990624 
+=====================================
+Job 15429897.bqs3 finished for user Mariusz.Pagowski in queue debug with exit code 0
+Node Access Status = SINGLEJOB
+Statistics  cput=01:19:45,energy_used=0,mem=60836436kb,vmem=83577936kb,walltime=00:03:32
+End Epilogue v3.1-ad-2016.04.05 Tue Oct 11 18:07:38 UTC 2016
+_______________________________________________________________

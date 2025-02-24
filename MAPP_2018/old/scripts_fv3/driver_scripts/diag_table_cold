@@ -1,0 +1,5 @@
+FV3 cold2restart Forecast
+YYYY MM DD HH 0 0
+"fv3_history", 21600, "seconds", 1, "seconds", "time"
+"gfs_dyn", "ps",       "psfc",    "fv3_history", "all", .false., "none", 2
+

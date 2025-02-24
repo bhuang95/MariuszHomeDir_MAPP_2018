@@ -1,0 +1,12 @@
+&record1
+ input_dir = "/scratch3/BMC/fim/MAPP_2018/OBS/NNR_003_6Targets/MYD04/Y2015/M08"
+ input_file = "nnr_003.MYD04_L2a.deep.20150802_1800z.ods"
+ output_dir = "/scratch3/BMC/fim/MAPP_2018/OBS/NNR_003_6Targets/bufr"
+ output_file = "nnr_003.MYD04_L2a.deep.20150802_1800z.bufr"
+ select_domain = .false.
+ lat_ll = -90.0
+ lat_ur = 90.0
+ lon_ll = -180.0
+ lon_ur = 180.0
+
+/

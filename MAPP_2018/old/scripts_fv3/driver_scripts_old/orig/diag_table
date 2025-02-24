@@ -1,0 +1,37 @@
+FV3 Ensemble Member 001 Forecast
+YYYY MM DD HH 0 0
+"fv3_history" 10800 "seconds" 1 "seconds" "time"
+"dynamics" "delz"     "delz"    "fv3_history" "all" .false. "none" 2
+"dynamics" "pfnh"     "pres"    "fv3_history" "all" .false. "none" 2
+"dynamics" "ucomp"    "ucomp"   "fv3_history" "all" .false. "none" 2
+"dynamics" "vcomp"    "vcomp"   "fv3_history" "all" .false. "none" 2
+"dynamics" "sphum"    "sphum"   "fv3_history" "all" .false. "none" 2
+"dynamics" "temp"     "temp"    "fv3_history" "all" .false. "none" 2
+"dynamics" "delp"     "delp"    "fv3_history" "all" .false. "none" 2
+"dynamics" "liq_wat"  "liq_wat" "fv3_history" "all" .false. "none" 2
+"dynamics" "o3mr"     "o3mr"    "fv3_history" "all" .false. "none" 2
+"dynamics" "pk"       "pk"      "fv3_history" "all" .false. "none" 2
+"dynamics" "bk"       "bk"      "fv3_history" "all" .false. "none" 2
+"dynamics" "zsurf"    "orog"    "fv3_history" "all" .false. "none" 2
+"dynamics" "ps"       "psfc"    "fv3_history" "all" .false. "none" 2
+"gfs_phys" "u10m"     "u10m"    "fv3_history" "all" .false. "none" 2
+"gfs_phys" "v10m"     "v10m"    "fv3_history" "all" .false. "none" 2
+"gfs_phys" "soilm"    "soilm"   "fv3_history" "all" .false. "none" 2
+"gfs_sfc"  "weasd"    "wsead"   "fv3_history" "all" .false. "none" 2
+"gfs_sfc"  "f10m"     "f10m"    "fv3_history" "all" .false. "none" 2
+"gfs_sfc"  "q2m"      "q2m"     "fv3_history" "all" .false. "none" 2
+"gfs_sfc"  "t2m"      "t2m"     "fv3_history" "all" .false. "none" 2
+"gfs_sfc"  "tsfc"     "tsfc"    "fv3_history" "all" .false. "none" 2
+"gfs_sfc"  "vtype"    "vtype"   "fv3_history" "all" .false. "none" 2
+"gfs_sfc"  "stype"    "stype"   "fv3_history" "all" .false. "none" 2
+"gfs_sfc"  "slmsksfc" "slmsk"   "fv3_history" "all" .false. "none" 2
+"gfs_sfc"  "vfracsfc" "vfrac"   "fv3_history" "all" .false. "none" 2
+"gfs_sfc"  "zorlsfc"  "zorl"    "fv3_history" "all" .false. "none" 2
+"gfs_sfc"  "soilt1"   "soilt1"  "fv3_history" "all" .false. "none" 2
+"gfs_sfc"  "soilt2"   "soilt2"  "fv3_history" "all" .false. "none" 2
+"gfs_sfc"  "soilt3"   "soilt3"  "fv3_history" "all" .false. "none" 2
+"gfs_sfc"  "soilt4"   "soilt4"  "fv3_history" "all" .false. "none" 2
+"gfs_sfc"  "soilw1"   "soilw1"  "fv3_history" "all" .false. "none" 2
+"gfs_sfc"  "soilw2"   "soilw2"  "fv3_history" "all" .false. "none" 2
+"gfs_sfc"  "soilw3"   "soilw3"  "fv3_history" "all" .false. "none" 2
+"gfs_sfc"  "soilw4"   "soilw4"  "fv3_history" "all" .false. "none" 2

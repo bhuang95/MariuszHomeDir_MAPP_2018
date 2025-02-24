@@ -1,0 +1,21 @@
+&chem_io
+  fnamein_prefix='/scratch1/BMC/gsd-fv3-dev/MAPP_2018/pagowski/stochastic_tests/INPUT/CEDS.2019.emis.20171001'
+  fnameout_prefix='/scratch1/BMC/gsd-fv3-dev/MAPP_2018/pagowski/stochastic_tests/OUTPUT/CEDS.2019.emis.20171001t'
+  varlist='BC','OC'
+  idtime=1 !in complete hours
+  ntimes=25 !if needed include same time of the next day for weighting
+/
+&nam_stochy
+  stochini=_STOCHINI_
+  ocnsppt=1.0,0.4,0.1
+  ocnsppt_lscale=500000,1000000,2000000
+  ocnsppt_tau=21600,86400,216000
+  iseed_ocnsppt=3
+/
+&nam_sfcperts
+/
+&nam_sppperts
+/
+&chem_stoch
+  do_sppt=.true.
+/

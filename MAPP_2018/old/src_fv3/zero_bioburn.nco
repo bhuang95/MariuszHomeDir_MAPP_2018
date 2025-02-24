@@ -1,0 +1,27 @@
+eb_bc[$Time,$yaxis_1,$xaxis_1]=0.f;
+eb_bc@xaxis_1g_name = "emiss_biob_bc";
+eb_bc@units = "ug m-2 s-1";
+
+eb_oc[$Time,$yaxis_1,$xaxis_1]=0.f;
+eb_oc@xaxis_1g_name = "emiss_biob_oc";
+eb_oc@units = "ug m-2 s-1";
+
+eb_pm25[$Time,$yaxis_1,$xaxis_1]=0.f;
+eb_pm25@xaxis_1g_name = "emiss_biob_pm25";
+eb_pm25@units = "ug m-2 s-1";
+
+eb_pm10[$Time,$yaxis_1,$xaxis_1]=0.f;
+eb_pm10@xaxis_1g_name = "emiss_biob_pm10";
+eb_pm10@units = "ug m-2 s-1";
+
+eb_so2[$Time,$yaxis_1,$xaxis_1]=0.f;
+eb_so2@xaxis_1g_name = "emiss_biob_so2";
+eb_so2@units = "ppmv kg  m-2 s-1";
+
+eb_dms[$Time,$yaxis_1,$xaxis_1]=0.f;
+eb_dms@xaxis_1g_name = "emiss_biob_dms";
+eb_dms@units = "ppmv kg  m-2 s-1";
+
+eb_sulf[$Time,$yaxis_1,$xaxis_1]=0.f;
+eb_sulf@xaxis_1g_name = "emiss_biob_sulf";
+eb_sulf@units = "ug m-2 s-1";

@@ -1,0 +1,80 @@
+import sys,os
+sys.path.append('_BASE_/pyscripts/lib')
+import matplotlib
+matplotlib.use('agg')
+from ndate import ndate
+import xarray as xa
+import numpy as np
+import matplotlib.pyplot as plt
+import scipy.stats as stats
+
+fcstname='_FCSTNAME_'
+fcstdir='_FCSTDIR_'
+fcsthead='_FCSTHEAD_'
+fcsttail='_FCSTTAIL_'
+fcstvar='_FCSTVAR_'
+
+obsname='_OBSNAME_'
+obsdir='_OBSDIR_'
+obshead='_OBSHEAD_' #cams_aods_
+obstail='_OBSTAIL_'
+obsvar='_OBSVAR_'
+gridname='_GRIDNAME_'
+areaname='_AREANAME_'
+xylimit=1.5
+
+sdate=_SDATE_
+edate=_EDATE_
+inc_h=_INC_H_
+
+
+maskfile='./%s_%s.nc' %(areaname,gridname)
+
+cdate=sdate
+while (cdate<=edate):
+   pdy=str(cdate)[:8]
+   cyc=str(cdate)[8:]
+   fcstfile='%s/%s/%s%s.%s0000%s.nc' %(fcstdir,gridname,fcsthead,pdy,cyc,fcsttail)
+   obsfile='%s/%s/%s%s%s.nc'%(obsdir,gridname,obshead,cdate,obstail)
+   print('Forecast file is ',fcstfile)
+   print('Observation file is ',obsfile)
+
+   fcst=xa.open_dataset(fcstfile)
+   obs=xa.open_dataset(obsfile)
+   mask=xa.open_dataset(maskfile)
+
+   mskfcst=xa.where(mask[areaname],fcst[fcstvar],np.nan)
+   mskobs=xa.where(mask[areaname],obs[obsvar],np.nan)
+
+   try:
+      concfcst
+   except NameError:
+      concfcst=mskfcst
+      concobs=mskobs
+   else:
+      concfcst=xa.concat((concfcst,mskfcst),dim='idx')
+      concobs=xa.concat((concobs,mskobs),dim='idx')
+
+   cdate=ndate(cdate,6)
+
+fcstvalues=np.reshape(concfcst.values,(concfcst.size))
+obsvalues=np.reshape(concobs.values,(concobs.size))
+
+fcstidx=np.where(~np.isnan(fcstvalues)==True)[0]
+obsidx=np.where(~np.isnan(obsvalues)==True)[0]
+
+pltfcst=fcstvalues[fcstidx]
+pltobs=obsvalues[obsidx]
+
+r, p=stats.pearsonr(pltfcst,pltobs)
+
+fig, ax = plt.subplots(figsize=(5,5))
+ax.plot([0,xylimit],[0,xylimit],'grey',lw=1.,zorder=0)
+ax.scatter(pltobs,pltfcst,c='b',s=0.25,zorder=1)
+ax.set_xlim(0,xylimit)
+ax.set_ylim(0,xylimit)
+ax.set_xlabel(obsname)
+ax.set_ylabel(fcstname)
+ax.set_title('%s %s' %(areaname,fcstvar),loc='left')
+ax.set_title('R=%.5f' %(r),loc='right')
+fig.savefig('./Sct_%s.AOD_%s_%s.%s_%s.png'%(areaname,fcstname,obsname,sdate,edate),dpi=200)

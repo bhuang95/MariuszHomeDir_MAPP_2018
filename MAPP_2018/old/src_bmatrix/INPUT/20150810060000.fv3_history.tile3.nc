@@ -1,0 +1,1 @@
+/scratch3/BMC/chem-var/pagowski/tmp/fv3GFS/FV3_RUNS/DA_ENKF/2015081006/OUTPUT_FV3/mem001/20150810060000.fv3_history.tile3.nc

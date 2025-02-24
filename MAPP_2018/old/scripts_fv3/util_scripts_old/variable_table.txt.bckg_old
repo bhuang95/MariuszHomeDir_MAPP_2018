@@ -1,0 +1,17 @@
+psfc                 pres                 sfc                  1 bilinear             F 2
+orog                 orog                 sfc                  1 bilinear             F 2
+sulf                 sulf                 mid layer            0 bilinear             T 3
+bc1                  bc1                  mid layer            0 bilinear             T 3
+bc2                  bc2                  mid layer            0 bilinear             T 3
+oc1                  oc1                  mid layer            0 bilinear             T 3
+oc2                  oc2                  mid layer            0 bilinear             T 3
+p25                  p25                  mid layer            0 bilinear             T 3
+dust_1               dust_1               mid layer            0 bilinear             T 3
+dust_2               dust_2               mid layer            0 bilinear             T 3
+dust_3               dust_3               mid layer            0 bilinear             T 3
+dust_4               dust_4               mid layer            0 bilinear             T 3
+dust_5               dust_5               mid layer            0 bilinear             T 3
+seas_1               seas_1               mid layer            0 bilinear             T 3
+seas_2               seas_2               mid layer            0 bilinear             T 3
+seas_3               seas_3               mid layer            0 bilinear             T 3
+seas_4               seas_4               mid layer            0 bilinear             T 3

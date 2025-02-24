@@ -1,0 +1,3 @@
+function fitting based on
+da_horizontal_covariances.f90
+from /scratch3/BMC/chem-var/pagowski/GENBE_2.0-master/external/tools 

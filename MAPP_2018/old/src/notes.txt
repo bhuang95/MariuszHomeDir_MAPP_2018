@@ -1,0 +1,18 @@
+These files were corrected for varstringname len=10 -> len=25 and some need recompilation
+
+ds_mask2ncdf.f90:  USE netcdf_io
+ds_mask2ncdf_nokind.f90:  USE netcdf_io
+dust_mask_barnes_unfinished.f90:  USE netcdf_io
+dust_mask.f90:  USE netcdf_io
+dust_mask_slint.f90:  USE netcdf_io
+factor_emiss.f90:  USE netcdf_io
+factor_emiss_spline_cubic.f90:  USE netcdf_io
+factor_emiss_spline_orig.f90:  USE netcdf_io
+factor_emiss_spline_tspack.f90:  USE netcdf_io
+netcdf_io_old.f90:module netcdf_io
+netcdf_io_old.f90:end module netcdf_io
+netcdf_io_orig.f90:module netcdf_io
+netcdf_io_orig.f90:end module netcdf_io
+partition_emission_increment.f90:  USE netcdf_io
+partition_increment_soa.f90:  USE netcdf_io
+wrf_pmsfc_ncf2grib.f90:  USE netcdf_io

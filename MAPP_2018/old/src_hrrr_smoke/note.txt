@@ -1,0 +1,4 @@
+cal_gocart_aod_mpi.f90 now has different satellits but
+serail version does not.
+Need to sort out cal_gocart_aod_mpi.f90 cal_smoke_aod_mpi.f90
+and related scripts rather than use smoke2gocart. that inflates files
